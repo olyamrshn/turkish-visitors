@@ -14,9 +14,6 @@ export default function Home() {
             viewBox="0 0 1220.000000 1204.000000"
             preserveAspectRatio="xMidYMid meet"
           >
-            <metadata>
-              Created by potrace 1.16, written by Peter Selinger 2001-2019
-            </metadata>
             <g
               transform="translate(0.000000,1204.000000) scale(0.100000,-0.100000)"
               fill="#fff"
@@ -66,7 +63,15 @@ l-12 82 -42 6 c-240 33 -1184 55 -1521 35z"
               />
             </g>
           </svg>
-          <h1 className="ml-2"> Transport Evolution Dynamics</h1>
+          <h1 className="ml-2 flex items-center">
+            <span>TED</span>
+            <span className="ml-2 text-base opacity-50">|</span>
+            <div className="ml-2 text-xs font-thin opacity-75">
+              <span>Transport</span>
+              <br />
+              <span>Evolution Dynamics</span>
+            </div>
+          </h1>
         </div>
       </header>
       <main className="flex min-h-screen flex-col items-center justify-between p-20">
