@@ -7,6 +7,14 @@ const config: Config = {
   ],
   // theme: {
   //   extend: {
+  //     screens: {
+  //       xs: "500px",
+  //     },
+  //   },
+  // },
+
+  // theme: {
+  //   extend: {
   //     backgroundImage: {
   //       "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
   //       "gradient-conic":
