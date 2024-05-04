@@ -74,7 +74,7 @@ export default function Home() {
       </main>
       <footer className="flex items-center w-full" style={{ height: "80px" }}>
         <div className="flex flex-row text-left pl-10 pb-10 font-bold text-2xl theme-text-color">
-          <Logo />
+          <Logo style={{ width: "50px", height: "50px" }} />
           <h1 className="ml-1 flex items-center">
             <span>TED</span>
             <span className="ml-2 mr-1 w-px h-8 bg-current inline-block">

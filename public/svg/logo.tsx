@@ -1,9 +1,11 @@
-export const Logo = () => (
+// export const Logo = () => (
+export const Logo = ({ style }: { style: React.CSSProperties }) => (
   <>
     <svg
+      style={style}
       version="1.0"
-      width="50"
-      height="50"
+      // width="50"
+      // height="50"
       fill="rgb(var(--svg-fill-color))"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1220.000000 1204.000000"
