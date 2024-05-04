@@ -1,8 +1,7 @@
 "use client"
+import Link from "next/link"
 import { useState } from "react"
 import dynamic from "next/dynamic"
-// import { Header } from "../components/Header"
-import Link from "next/link"
 import { Logo } from "../public/svg/logo"
 import { Arrow } from "../public/svg/arrow"
 
@@ -21,6 +20,24 @@ export default function Home() {
     document.body.classList.toggle("dark-theme")
   }
 
+  const links = [
+    {
+      href: "/about",
+      text: "About",
+      description: "The world does not stand still, and neither do we",
+    },
+    {
+      href: "/contacts",
+      text: "Contacts",
+      description: "Easy to start: choose a way to connect!",
+    },
+    {
+      href: "/legalinfo",
+      text: "Legal Information",
+      description: "Reliable Delivery Since 1999",
+    },
+  ]
+
   return (
     <div className="theme-text-color">
       <Header
@@ -30,56 +47,25 @@ export default function Home() {
       />
       <main className="flex min-h-screen flex-col items-center p-10">
         <div className="my-5 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left">
-          <Link
-            href="/about"
-            className="group rounded-lg border border-none px-5 pt-5 pb-20 transition-colors flex flex-col justify-start
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              href={link.href}
+              className="group rounded-lg border border-none px-5 pt-5 pb-20 transition-colors flex flex-col justify-start
             hover:bg-custom-blue hover:border-darker-blue
             dark:hover:bg-white dark:hover:border-white"
-          >
-            <h2 className="mb-3 text-3xl font-semibold">
-              About{" "}
-              <span className="leading-[140%] -tracking-[0.02em] inline-block transition-transform group-hover:translate-x-3 motлцion-reduce:transform-none">
-                <Arrow />
-              </span>
-            </h2>
-            <p className="m-0 max-w-[30ch] text-lg opacity-50 group-hover:opacity-100 transition-opacity duration-300">
-              The world does not stand still, and neither do we
-            </p>
-          </Link>
-
-          <Link
-            href="/contacts"
-            className="group rounded-lg border border-none px-5 pt-5 pb-20 transition-colors flex flex-col justify-start
-            hover:bg-custom-blue hover:border-darker-blue
-            dark:hover:bg-white dark:hover:border-white"
-          >
-            <h2 className="mb-3 text-3xl font-semibold">
-              Contacts{" "}
-              <span className="leading-[140%] -tracking-[0.02em] inline-block transition-transform group-hover:translate-x-3 motion-reduce:transform-none">
-                <Arrow />
-              </span>
-            </h2>
-            <p className="m-0 max-w-[30ch] text-lg opacity-50 group-hover:opacity-100 transition-opacity duration-300">
-              Easy to start: choose a way to connect!
-            </p>
-          </Link>
-
-          <Link
-            href="/legalinfo"
-            className="group rounded-lg border border-none px-5 pt-5 pb-20 transition-colors flex flex-col justify-start
-            hover:bg-custom-blue hover:border-darker-blue
-            dark:hover:bg-white dark:hover:border-white"
-          >
-            <h2 className="mb-3 text-3xl font-semibold">
-              Legal Information{" "}
-              <span className="leading-[140%] -tracking-[0.02em] inline-block transition-transform group-hover:translate-x-3 motion-reduce:transform-none">
-                <Arrow />
-              </span>
-            </h2>
-            <p className="m-0 max-w-[30ch] text-lg opacity-50 group-hover:opacity-100 transition-opacity duration-300">
-              Reliable Delivery Since 1999
-            </p>
-          </Link>
+            >
+              <h2 className="mb-3 text-3xl font-semibold">
+                {link.text}{" "}
+                <span className="leading-[140%] -tracking-[0.02em] inline-block transition-transform group-hover:translate-x-3 motion-reduce:transform-none">
+                  <Arrow />
+                </span>
+              </h2>
+              <p className="m-0 max-w-[30ch] text-lg opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+                {link.description}
+              </p>
+            </Link>
+          ))}
         </div>
         <h2 className="text-4xl font-bold my-5">
           Keeping Business Flowing Since 1999
