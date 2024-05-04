@@ -1,9 +1,17 @@
 "use client"
 import { useState } from "react"
-import { Header } from "../components/Header"
+import dynamic from "next/dynamic"
+// import { Header } from "../components/Header"
 import Link from "next/link"
 import { Logo } from "../public/svg/logo"
 import { Arrow } from "../public/svg/arrow"
+
+const Header = dynamic(
+  () => import("../components/Header").then((mod) => mod.Header),
+  {
+    ssr: false,
+  }
+)
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -15,7 +23,11 @@ export default function Home() {
 
   return (
     <div className="theme-text-color">
-      <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <Header
+        isDarkMode={isDarkMode}
+        toggleDarkMode={toggleDarkMode}
+        showMainLink={true}
+      />
       <main className="flex min-h-screen flex-col items-center p-10">
         <div className="my-5 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left">
           <Link
