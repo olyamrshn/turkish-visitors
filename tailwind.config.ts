@@ -5,23 +5,13 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  // theme: {
-  //   extend: {
-  //     screens: {
-  //       xs: "500px",
-  //     },
-  //   },
-  // },
 
-  // theme: {
-  //   extend: {
-  //     backgroundImage: {
-  //       "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-  //       "gradient-conic":
-  //         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-  //     },
-  //   },
-  // },
+  theme: {
+    colors: {
+      "custom-blue": "#0b38ae",
+      "darker-blue": "#d6dae0",
+    },
+  },
   plugins: [],
 }
 export default config

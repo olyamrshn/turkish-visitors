@@ -1,11 +1,22 @@
+"use client"
+import { useState } from "react"
+import { Header } from "../../components/Header"
+
 export default function LegalInfo() {
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode)
+    document.body.classList.toggle("dark-theme")
+  }
   return (
-    <>
-      <main className="flex min-h-screen flex-col justify-between p-5">
-        <h1 className="font-bold text-white text-2xl text-center py-10">
+    <div className="theme-text-color">
+      <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <main className="flex min-h-screen flex-col p-5">
+        <h1 className="font-bold  text-2xl text-center py-10">
           Legal Information
         </h1>
       </main>
-    </>
+    </div>
   )
 }

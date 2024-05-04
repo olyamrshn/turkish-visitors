@@ -2,32 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.theme-text-color {
+  color: rgb(var(--theme-text));
 }
+.theme-text-color .group:hover {
+  color: var(--theme-text-hover);
+}
+
+.svg-arrow {
+  fill: rgb(var(--svg-fill-color));
+}
+
+.group:hover .svg-arrow {
+  fill: rgb(var(--svg-hover-color));
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb:  31, 41, 55;
+    --theme-text: 255, 255, 255;
+    --theme-text-hover: 255, 255, 255;
+    --background-start-rgb: 4, 11, 33;
+    --background-end-rgb: 0, 18, 45;
+    --svg-fill-color: 255, 255, 255;
+    --svg-hover-color: 255, 255, 255;
+  }
+  .group:hover button {
+    color: var(--button-hover-color);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (prefers-color-scheme: light) {
+  :root {
+    --theme-text: 8, 40, 126;
+    --theme-text-hover: 255, 255, 255;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+    --svg-fill-color: 8, 40, 126;
+    --svg-hover-color: 255, 255, 255;
+  }
+  .theme-text-color .group:hover {
+    color: rgb(var(--theme-text-hover));
+  }
+}
+
+.dark-theme {
+  --theme-text: 255, 255, 255;
+  --theme-text-hover: 255, 255, 255;
+  --background-start-rgb: 4, 11, 33;
+  --background-end-rgb: 0, 18, 45;
+  --svg-fill-color: 255, 255, 255;
+  --svg-hover-color: 255, 255, 255;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+body {
+  transition: background-color 0.5s ease;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
