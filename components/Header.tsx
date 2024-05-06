@@ -16,7 +16,7 @@ export const Header = ({
   <header className="pt-5 pl-10 font-bold text-2xl text-left xs:text-center flex justify-between">
     {showMainLink ? (
       <Link href="https://www.ted.international/en">
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center hover:opacity-60">
           <Logo style={{ width: "65px", height: "65px" }} />
           <h1 className="ml-1 flex items-center">
             <span
@@ -38,7 +38,7 @@ export const Header = ({
       </Link>
     ) : (
       <Link href="/">
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center hover:opacity-60">
           <Logo style={{ width: "65px", height: "65px" }} />
           <h1 className="ml-1 flex items-center">
             <span

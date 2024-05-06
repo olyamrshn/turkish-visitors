@@ -17,35 +17,6 @@
   fill: rgb(var(--svg-hover-color));
 }
 
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --theme-text: 255, 255, 255;
-    --theme-text-hover: 255, 255, 255;
-    --background-start-rgb: 4, 11, 33;
-    --background-end-rgb: 0, 18, 45;
-    --svg-fill-color: 255, 255, 255;
-    --svg-hover-color: 255, 255, 255;
-  }
-  .group:hover button {
-    color: var(--button-hover-color);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --theme-text: 8, 40, 126;
-    --theme-text-hover: 255, 255, 255;
-    --background-start-rgb: 255, 255, 255;
-    --background-end-rgb: 255, 255, 255;
-    --svg-fill-color: 8, 40, 126;
-    --svg-hover-color: 255, 255, 255;
-  }
-  .theme-text-color .group:hover {
-    color: rgb(var(--theme-text-hover));
-  }
-} */
-
 :root {
   --theme-text: 8, 40, 126;
   --theme-text-hover: 255, 255, 255;
@@ -74,6 +45,7 @@
   }
 }
 
+
 body {
   transition: background-color 0.5s ease;
   background: linear-gradient(
@@ -82,4 +54,24 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar {
+  background: #13285b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  opacity: 0.4;
+  border-radius: 5px;
+  max-width: 5px;
+  margin: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.7;
 }
