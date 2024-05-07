@@ -2,8 +2,8 @@
 import Link from "next/link"
 import { useState } from "react"
 import dynamic from "next/dynamic"
-import { Logo } from "../public/svg/logo"
 import { Arrow } from "../public/svg/arrow"
+import { Footer } from "../components/Footer"
 
 const Header = dynamic(
   () => import("../components/Header").then((mod) => mod.Header),
@@ -45,8 +45,8 @@ export default function Home() {
         toggleDarkMode={toggleDarkMode}
         showMainLink={true}
       />
-      <main className="flex min-h-screen flex-col items-center p-10">
-        <div className="my-5 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left">
+      <main className="flex min-h-screen flex-col items-center ">
+        <div className="py-5 grid text-center xs:grid-rows-3 xl:mb-0 xl:w-full xl:max-w-5xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl-pb-5">
           {links.map((link, index) => (
             <Link
               key={index}
@@ -55,44 +55,23 @@ export default function Home() {
             hover:bg-custom-blue hover:border-darker-blue
             dark:hover:bg-white dark:hover:border-white"
             >
-              <h2 className="mb-3 text-3xl font-semibold">
+              <h2 className="mb-3 xs:text-lg xs:font-bold xl:text-3xl xl:font-semibold">
                 {link.text}{" "}
                 <span className="leading-[140%] -tracking-[0.02em] inline-block transition-transform group-hover:translate-x-3 motion-reduce:transform-none">
                   <Arrow />
                 </span>
               </h2>
-              <p className="m-0 max-w-[30ch] text-lg opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="m-0 max-w-[30ch] xs:text-sm xl:text-lg opacity-50 group-hover:opacity-100 transition-opacity duration-300">
                 {link.description}
               </p>
             </Link>
           ))}
         </div>
-        <h2 className="text-4xl font-bold my-5">
+        <h2 className="mt-2 xs:text-2xl xl:text-4xl font-bold my-1">
           Keeping Business Flowing Since 1999
         </h2>
-        <div></div>
       </main>
-      <footer className="flex items-center w-full" style={{ height: "80px" }}>
-        <div className="flex flex-row text-left pl-10 pb-10 font-bold text-2xl theme-text-color">
-          <Logo style={{ width: "60px", height: "60px" }} />
-          <h1 className="ml-1 flex items-center">
-            <span
-              className="text-4xl"
-              style={{ letterSpacing: "-0.05em", fontWeight: "900" }}
-            >
-              TED
-            </span>
-            <span className="ml-2 mr-1 w-px h-8 bg-current font-light inline-block">
-              |
-            </span>
-            <div className="ml-2 text-xs font-light opacity-75">
-              <span>Transport</span>
-              <br />
-              <span>Evolution Dynamics</span>
-            </div>
-          </h1>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

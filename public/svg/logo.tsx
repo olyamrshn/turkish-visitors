@@ -1,8 +1,8 @@
 // export const Logo = () => (
-export const Logo = ({ style }: { style: React.CSSProperties }) => (
+export const Logo = ({ className }: { className: string }) => (
   <>
     <svg
-      style={style}
+      className={className}
       version="1.0"
       // width="50"
       // height="50"

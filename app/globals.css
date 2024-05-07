@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind screens;
 
 .theme-text-color {
   color: rgb(var(--theme-text));
@@ -57,7 +58,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -65,11 +66,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fff;
-  opacity: 0.4;
+  color: "#fff";
   border-radius: 5px;
-  max-width: 5px;
-  margin: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {

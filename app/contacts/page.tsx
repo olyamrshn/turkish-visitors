@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import { Header } from "../../components/Header"
+import { Footer } from "../../components/Footer"
 
 export default function Contacts() {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -12,9 +13,10 @@ export default function Contacts() {
   return (
     <div className="theme-text-color">
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="flex min-h-screen flex-col p-5">
-        <h1 className="font-bold  text-2xl text-center py-10">Contacts</h1>
+      <main className="flex min-h-screen flex-col px-5">
+        <h1 className="font-bold  text-2xl text-center">Contacts</h1>
       </main>
+      <Footer />
     </div>
   )
 }
