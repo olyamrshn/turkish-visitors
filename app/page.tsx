@@ -16,7 +16,7 @@ const Header = dynamic(
 )
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
 
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode
@@ -68,13 +68,19 @@ export default function Home() {
   ]
 
   return (
-    <div className="theme-text-color">
+    <div className="theme-text-color min-h-screen">
       <Header
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
         showMainLink={true}
       />
-      <main className="flex min-h-screen flex-col items-center">
+      <main className="main-content flex flex-col items-center">
+        <h2 className="text-center mx-auto mt-5 xs:text-lg xl:text-2xl font-semibold space-y-4 text-content">
+          ADL is a company based in Turkey, specializing in international trade.
+          We engage in importing and exporting various goods for clients in
+          <br />
+          Turkey and beyond.
+        </h2>
         <div className="py-5 grid text-center xs:grid-rows-3 xs:max-w-4xl xl:mb-0 xl:w-full xl:max-w-4xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl-pb-5">
           {links.map((link, index) => (
             <Link
@@ -97,15 +103,8 @@ export default function Home() {
             </Link>
           ))}
         </div>
-        <h2 className="mt-2 xs:text-2xl xl:text-4xl font-bold my-1 space-y-4">
-          ADL is a company based in Turkey, specializing in international trade.
-          <br />
-          We engage in importing and exporting various goods for clients in
-          <br />
-          Turkey and beyond.
-        </h2>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

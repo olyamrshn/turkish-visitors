@@ -19,13 +19,11 @@ export default function About() {
     document.body.classList.toggle("dark-theme", savedDarkMode)
   }, [])
 
-  //todo: customize card style in main site
-
   return (
-    <div className="theme-text-color">
+    <div className="theme-text-color min-h-screen">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="text-center flex min-h-screen flex-col px-5">
-        <h1 className="font-bold text-2xl">About</h1>
+      <main className="text-center flex flex-col px-5">
+        <h1 className="font-bold text-3xl">About ADL</h1>
         <div
           style={{
             textAlign: "center",
@@ -64,7 +62,7 @@ export default function About() {
           </p>
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

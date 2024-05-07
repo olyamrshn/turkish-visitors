@@ -3,6 +3,24 @@
 @tailwind utilities;
 @tailwind screens;
 
+.text-content {
+  width: 68%;
+}
+
+.hover-opacity {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-opacity:hover {
+  opacity: 0.6;
+}
+
+@media (min-width: 600px) {
+  .text-content {
+    width: 40%;
+  }
+}
+
 .link-item {
   display: flex;
   align-items: center;
@@ -63,11 +81,10 @@
   }
 }
 
-
-
-@media (min-width: 601px) { /* Assuming 601px is the breakpoint for XL screens */
+/* todo: fix  */
+@media (min-width: 601px) {
   .arrow-white {
-    --svg-hover-color: 255, 255, 255; /* White color for hover state */
+    --svg-hover-color: 255, 255, 255;
   }
 }
 
@@ -80,7 +97,8 @@
     color: white;
   }
   .xs-heading {
-    font-size: 18px;
+    padding-top: 5px;
+    font-size: 22px;
     font-weight: 400;
     color: white;
   }
@@ -102,6 +120,14 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    margin: "auto";
+}
+
+.main-content {
+  flex: 1;
 }
 
 ::-webkit-scrollbar {

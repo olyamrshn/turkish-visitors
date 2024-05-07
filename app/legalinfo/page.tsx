@@ -20,12 +20,12 @@ export default function LegalInfo() {
   }, [])
 
   return (
-    <div className="theme-text-color">
+    <div className="theme-text-color min-h-screen">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="flex min-h-screen flex-col px-5">
-        <h1 className="font-bold  text-2xl text-center">Legal Information</h1>
+      <main className="flex flex-col px-5">
+        <h1 className="font-bold  text-3xl text-center">Legal Information</h1>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
