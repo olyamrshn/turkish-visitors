@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Logo } from "../public/svg/logo"
-import { MdBrightness1, MdBrightness3 } from "react-icons/md"
-
+import { MdBrightness3 } from "react-icons/md"
+import { IoSunnyOutline } from "react-icons/io5"
 interface HeaderProps {
   isDarkMode: boolean
   toggleDarkMode: () => void
@@ -69,7 +69,7 @@ export const Header = ({
         onClick={toggleDarkMode}
       >
         {isDarkMode ? (
-          <MdBrightness1 className="xs:w-7 xs:h-7 xl:w-10 xl:h-10" />
+          <IoSunnyOutline className="xs:w-7 xs:h-7 xl:w-10 xl:h-10" />
         ) : (
           <MdBrightness3 className="xs:w-7 xs:h-7 xl:w-10 xl:h-10" />
         )}

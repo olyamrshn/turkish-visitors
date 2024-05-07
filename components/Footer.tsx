@@ -2,7 +2,10 @@ import { Logo } from "../public/svg/logo"
 
 export const Footer = () => {
   return (
-    <footer className="flex items-center w-full" style={{ height: "60px" }}>
+    <footer
+      className="flex pb-5 items-center w-full"
+      style={{ height: "60px" }}
+    >
       <div className="flex flex-row text-left  px-5 pb-2 font-bold text-2xl theme-text-color">
         <Logo className="xs:w-12 xs:h-12 xl:w-20 xl:h-20" />
         <h1 className="ml-1 flex items-center">

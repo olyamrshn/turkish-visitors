@@ -3,6 +3,19 @@
 @tailwind utilities;
 @tailwind screens;
 
+.link-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.link-arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .theme-text-color {
   color: rgb(var(--theme-text));
 }
@@ -38,6 +51,10 @@
   --background-end-rgb: 0, 18, 45;
   --svg-fill-color: 255, 255, 255;
   --svg-hover-color: 255, 255, 255;
+  .dark-theme .xs-always-blue {
+    background-color: #073098;
+    color: white;
+  }
 }
 
 @layer utilities {
@@ -46,6 +63,63 @@
   }
 }
 
+/* @media (max-width: 600px) {
+  .xs-always-blue {
+    background-color: #073098;
+    color: white;
+  }
+  .icon-xs-white {
+    color: white;
+  }
+  .xs-heading {
+    font-size: 18;
+    font-weight: 400;
+  }
+  .xs-description {
+    font-size: 16;
+    font-weight: 300;
+  }
+  .dark-theme .xs-always-blue {
+    background-color: #073098;
+    color: white;
+  }
+  .dark-theme .icon-xs-white {
+    color: #073098;
+  }
+  .dark-theme .xs-heading {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+  }
+  .dark-theme .xs-description {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+  }
+} */
+
+@media (max-width: 600px) {
+  .xs-always-blue {
+    background-color: #073098;
+    color: white;
+  }
+  .icon-xs-white {
+    color: white;
+  }
+  .xs-heading {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+  }
+  .xs-description {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+  }
+  .xs-arrow {
+    fill: white;
+  }
+}
 
 body {
   transition: background-color 0.5s ease;
