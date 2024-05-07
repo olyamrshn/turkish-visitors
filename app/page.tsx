@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import dynamic from "next/dynamic"
 import { Arrow } from "../public/svg/arrow"
 import { Footer } from "../components/Footer"
@@ -16,12 +16,20 @@ const Header = dynamic(
 )
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(false)
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode)
-    document.body.classList.toggle("dark-theme")
+    const newDarkMode = !darkMode
+    setDarkMode(newDarkMode)
+    document.body.classList.toggle("dark-theme", newDarkMode)
+    localStorage.setItem("darkMode", newDarkMode.toString())
   }
+
+  useEffect(() => {
+    const savedDarkMode = localStorage.getItem("darkMode") === "true"
+    setDarkMode(savedDarkMode)
+    document.body.classList.toggle("dark-theme", savedDarkMode)
+  }, [])
 
   const links = [
     {
@@ -31,7 +39,7 @@ export default function Home() {
       icon: (
         <GlobeIcon
           className="icon-xs-white"
-          style={{ width: "24px", height: "24px" }}
+          style={{ width: "26px", height: "26px" }}
         />
       ),
     },
@@ -42,7 +50,7 @@ export default function Home() {
       icon: (
         <ContactIcon
           className="icon-xs-white"
-          style={{ width: "24px", height: "24px" }}
+          style={{ width: "26px", height: "26px" }}
         />
       ),
     },
@@ -53,7 +61,7 @@ export default function Home() {
       icon: (
         <InfoIcon
           className="icon-xs-white"
-          style={{ width: "24px", height: "24px" }}
+          style={{ width: "26px", height: "26px" }}
         />
       ),
     },
@@ -62,7 +70,7 @@ export default function Home() {
   return (
     <div className="theme-text-color">
       <Header
-        isDarkMode={isDarkMode}
+        darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
         showMainLink={true}
       />
@@ -79,8 +87,8 @@ export default function Home() {
               <h2 className="xs-heading link-item mb-3 text-3xl font-semibold flex items-center">
                 <span className="pr-2 icon-xs-white">{link.icon}</span>
                 {link.text}
-                <span className="leading-[140%] -tracking-[0.02em] inline-block transition-transform group-hover:translate-x-3 motion-reduce:transform-none">
-                  <Arrow className="xs-arrow" />
+                <span className="arrow-white leading-[140%] -tracking-[0.02em] inline-block transition-transform group-hover:translate-x-3 motion-reduce:transform-none">
+                  <Arrow className="xs-arrow arrow-white" />
                 </span>
               </h2>
               <p className="xs-description m-0 max-w-[30ch] xl:text-xl opacity-50 group-hover:opacity-100 transition-opacity duration-300">

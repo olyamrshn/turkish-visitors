@@ -3,7 +3,7 @@ import { Logo } from "../public/svg/logo"
 import { MdBrightness3 } from "react-icons/md"
 import { IoSunnyOutline } from "react-icons/io5"
 interface HeaderProps {
-  isDarkMode: boolean
+  darkMode: boolean
   toggleDarkMode: () => void
   showMainLink?: boolean
 }
@@ -41,11 +41,14 @@ const HeaderLink = ({ href, isMainLink }: LogoLinkProps) => (
 )
 
 export const Header = ({
-  isDarkMode,
+  darkMode,
   toggleDarkMode,
   showMainLink,
 }: HeaderProps) => (
-  <header className="pt-5 px-5 font-bold text-2xl text-left xs:text-center flex justify-between">
+  <header
+    key={String(darkMode)}
+    className="pt-5 px-5 font-bold text-2xl text-left xs:text-center flex justify-between"
+  >
     {showMainLink ? (
       <HeaderLink href="https://www.ted.international/en" isMainLink={true} />
     ) : (
@@ -60,7 +63,7 @@ export const Header = ({
         }}
         onClick={toggleDarkMode}
       >
-        {isDarkMode ? (
+        {darkMode ? (
           <IoSunnyOutline className="xs:w-7 xs:h-7 xl:w-10 xl:h-10" />
         ) : (
           <MdBrightness3 className="xs:w-7 xs:h-7 xl:w-10 xl:h-10" />

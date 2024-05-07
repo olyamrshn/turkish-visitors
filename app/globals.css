@@ -31,6 +31,10 @@
   fill: rgb(var(--svg-hover-color));
 }
 
+.theme-text-color .group:hover {
+  color: rgb(var(--theme-text-hover));
+}
+
 :root {
   --theme-text: 8, 40, 126;
   --theme-text-hover: 255, 255, 255;
@@ -38,10 +42,6 @@
   --background-end-rgb: 255, 255, 255;
   --svg-fill-color: 8, 40, 126;
   --svg-hover-color: 255, 255, 255;
-}
-
-.theme-text-color .group:hover {
-  color: rgb(var(--theme-text-hover));
 }
 
 .dark-theme {
@@ -60,6 +60,14 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+
+
+@media (min-width: 601px) { /* Assuming 601px is the breakpoint for XL screens */
+  .arrow-white {
+    --svg-hover-color: 255, 255, 255; /* White color for hover state */
   }
 }
 
