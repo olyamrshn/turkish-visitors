@@ -63,41 +63,6 @@
   }
 }
 
-/* @media (max-width: 600px) {
-  .xs-always-blue {
-    background-color: #073098;
-    color: white;
-  }
-  .icon-xs-white {
-    color: white;
-  }
-  .xs-heading {
-    font-size: 18;
-    font-weight: 400;
-  }
-  .xs-description {
-    font-size: 16;
-    font-weight: 300;
-  }
-  .dark-theme .xs-always-blue {
-    background-color: #073098;
-    color: white;
-  }
-  .dark-theme .icon-xs-white {
-    color: #073098;
-  }
-  .dark-theme .xs-heading {
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-  }
-  .dark-theme .xs-description {
-    font-size: 16px;
-    font-weight: 300;
-    color: white;
-  }
-} */
-
 @media (max-width: 600px) {
   .xs-always-blue {
     background-color: #073098;

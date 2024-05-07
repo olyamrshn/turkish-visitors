@@ -66,13 +66,13 @@ export default function Home() {
         toggleDarkMode={toggleDarkMode}
         showMainLink={true}
       />
-      <main className="flex min-h-screen flex-col items-center ">
-        <div className="py-5 grid text-center xs:grid-rows-3 xl:mb-0 xl:w-full xl:max-w-5xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl-pb-5">
+      <main className="flex min-h-screen flex-col items-center">
+        <div className="py-5 grid text-center xs:grid-rows-3 xs:max-w-4xl xl:mb-0 xl:w-full xl:max-w-4xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl-pb-5">
           {links.map((link, index) => (
             <Link
               key={index}
               href={link.href}
-              className="mb-0.5 group rounded-lg border border-none px-5 pt-5 pb-20 transition-colors flex flex-col justify-start xs-always-blue
+              className="mb-2 group rounded-2xl border border-none px-5 pt-5 pb-20 transition-colors flex flex-col justify-start xs-always-blue
             hover:bg-custom-blue hover:border-darker-blue
             dark:hover:bg-white dark:hover:border-white"
             >

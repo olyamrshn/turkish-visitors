@@ -21,7 +21,7 @@ export const Footer = () => {
           <div className="ml-2 text-xs font-light opacity-75">
             <span>Transport</span>
             <br />
-            <span>Evolution Dynamics</span>
+            <span style={{ whiteSpace: "nowrap" }}>Evolution Dynamics</span>
           </div>
         </h1>
       </div>

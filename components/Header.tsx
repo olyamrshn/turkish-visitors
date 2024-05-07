@@ -8,6 +8,38 @@ interface HeaderProps {
   showMainLink?: boolean
 }
 
+interface LogoLinkProps {
+  href: string
+  isMainLink: boolean
+}
+const HeaderLink = ({ href, isMainLink }: LogoLinkProps) => (
+  <Link href={href}>
+    <div
+      className={`hover:opacity-60 flex flex-row text-left ${
+        isMainLink ? "" : "pb-10"
+      } font-bold text-2xl theme-text-color`}
+    >
+      <Logo className="xs:w-12 xs:h-12 xl:w-20 xl:h-20" />
+      <h1 className="ml-1 flex items-center">
+        <span
+          className="xs:text-2xl xl:text-4xl"
+          style={{ letterSpacing: "-0.05em", fontWeight: "900" }}
+        >
+          TED
+        </span>
+        <span className="ml-2 mr-1 w-px h-8 bg-current font-light inline-block">
+          |
+        </span>
+        <div className="ml-2 text-xs font-light opacity-75">
+          <span>Transport</span>
+          <br />
+          <span style={{ whiteSpace: "nowrap" }}>Evolution Dynamics</span>
+        </div>
+      </h1>
+    </div>
+  </Link>
+)
+
 export const Header = ({
   isDarkMode,
   toggleDarkMode,
@@ -15,49 +47,9 @@ export const Header = ({
 }: HeaderProps) => (
   <header className="pt-5 px-5 font-bold text-2xl text-left xs:text-center flex justify-between">
     {showMainLink ? (
-      <Link href="https://www.ted.international/en">
-        <div className="hover:opacity-60 flex flex-row text-left font-bold text-2xl theme-text-color">
-          <Logo className="xs:w-12 xs:h-12 xl:w-20 xl:h-20" />
-          <h1 className="ml-1 flex items-center">
-            <span
-              className="xs:text-2xl xl:text-4xl"
-              style={{ letterSpacing: "-0.05em", fontWeight: "900" }}
-            >
-              TED
-            </span>
-            <span className="ml-2 mr-1 w-px h-8 bg-current font-light inline-block">
-              |
-            </span>
-            <div className="ml-2 text-xs font-light opacity-75">
-              <span>Transport</span>
-              <br />
-              <span>Evolution Dynamics</span>
-            </div>
-          </h1>
-        </div>
-      </Link>
+      <HeaderLink href="https://www.ted.international/en" isMainLink={true} />
     ) : (
-      <Link href="/">
-        <div className="hover:opacity-60 flex flex-row text-left pb-10 font-bold text-2xl theme-text-color">
-          <Logo className="xs:w-12 xs:h-12 xl:w-20 xl:h-20" />
-          <h1 className="ml-1 flex items-center">
-            <span
-              className="xs:text-2xl xl:text-4xl"
-              style={{ letterSpacing: "-0.05em", fontWeight: "900" }}
-            >
-              TED
-            </span>
-            <span className="ml-2 mr-1 w-px h-8 bg-current font-light inline-block">
-              |
-            </span>
-            <div className="ml-2 text-xs font-light opacity-75">
-              <span>Transport</span>
-              <br />
-              <span>Evolution Dynamics</span>
-            </div>
-          </h1>
-        </div>
-      </Link>
+      <HeaderLink href="/" isMainLink={false} />
     )}
     <div>
       <button
