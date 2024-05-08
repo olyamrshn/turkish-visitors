@@ -15,19 +15,19 @@ interface LogoLinkProps {
 const HeaderLink = ({ href, isMainLink }: LogoLinkProps) => (
   <Link href={href}>
     <div
-      className={` flex flex-row text-left ${
-        isMainLink ? "" : "pb-10 hover:opacity-60"
+      className={` flex flex-row items-center text-left ${
+        isMainLink ? "cursor-default" : "pb-10 hover:opacity-60 cursor-pointer"
       } font-bold text-2xl theme-text-color`}
     >
-      <Logo className="xs:w-8 xs:h-8 xl:w-18 xl:h-18" />
+      <Logo className="xs-logo xl-logo" />
       <h1 className="ml-1 flex items-center">
-        <span className="ml-2 mr-1 w-px h-8 bg-current font-light inline-block">
+        <span className="ml-1 mr-1 w-px h-8 bg-current font-light inline-block">
           |
         </span>
         <div className="ml-2 text-xs font-light opacity-75">
           <span>Transport</span>
           <br />
-          <span style={{ whiteSpace: "nowrap" }}>Evolution Dynamics</span>
+          <span style={{ whiteSpace: "nowrap" }}>and Logistics</span>
         </div>
       </h1>
     </div>

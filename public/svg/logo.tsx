@@ -1,14 +1,14 @@
 export const Logo = ({ className }: { className: string }) => (
   <svg
     className={className}
+    color="rgb(var(--svg-fill-color))"
     xmlns="http://www.w3.org/2000/svg"
     fill="rgb(var(--svg-fill-color))"
     viewBox="0 0 485.000000 497.000000"
-    preserveAspectRatio="xMidYMid meet"
   >
     <g
       transform="translate(0.000000,497.000000) scale(0.100000,-0.100000)"
-      stroke="none"
+      stroke="currentColor"
     >
       <path
         d="M1857 4733 c-2 -5 -3 -998 -3 -2208 l1 -2200 400 0 c445 0 463 2 600
