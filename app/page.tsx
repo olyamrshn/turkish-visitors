@@ -3,7 +3,6 @@ import Link from "next/link"
 import { useState, useEffect } from "react"
 import dynamic from "next/dynamic"
 import { Arrow } from "../public/svg/arrow"
-import { Footer } from "../components/Footer"
 import { ContactIcon } from "../public/svg/contacts"
 import { GlobeIcon } from "../public/svg/globe"
 import { InfoIcon } from "../public/svg/info"
@@ -16,7 +15,7 @@ const Header = dynamic(
 )
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(false)
 
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode
@@ -75,10 +74,9 @@ export default function Home() {
         showMainLink={true}
       />
       <main className="main-content flex flex-col items-center">
-        <h2 className="text-center mx-auto mt-5 xs:text-lg xl:text-2xl font-semibold space-y-4 text-content">
+        <h2 className="xs-description-pages text-center mx-auto mt-5 xs:text-lg xl:text-2xl font-semibold space-y-4 text-content">
           ADL is a company based in Turkey, specializing in international trade.
           We engage in importing and exporting various goods for clients in
-          <br />
           Turkey and beyond.
         </h2>
         <div className="py-5 grid text-center xs:grid-rows-3 xs:max-w-4xl xl:mb-0 xl:w-full xl:max-w-4xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl-pb-5">

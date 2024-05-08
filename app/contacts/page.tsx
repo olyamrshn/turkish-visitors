@@ -25,9 +25,10 @@ export default function Contacts() {
       <main className="flex flex-col items-center px-5">
         <Ship />
         <div className="flex flex-row pt-5 justify-center items-center">
-          <h1 className="font-bold  text-3xl text-center pr-2">Contact Us</h1>
+          <h2 className="xs-heading-pages font-bold text-3xl text-center pr-2">
+            Contact Us
+          </h2>
         </div>
-
         <div className="py-7 w-full max-w-4xl text-center justify-center items-center">
           <div className="text-center flex flex-row justify-center items-center space-x-3">
             <a
@@ -70,7 +71,6 @@ export default function Contacts() {
           </p>
         </div>
       </main>
-      {/* <Footer /> */}
     </div>
   )
 }

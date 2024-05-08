@@ -15,18 +15,12 @@ interface LogoLinkProps {
 const HeaderLink = ({ href, isMainLink }: LogoLinkProps) => (
   <Link href={href}>
     <div
-      className={`hover:opacity-60 flex flex-row text-left ${
-        isMainLink ? "" : "pb-10"
+      className={` flex flex-row text-left ${
+        isMainLink ? "" : "pb-10 hover:opacity-60"
       } font-bold text-2xl theme-text-color`}
     >
-      <Logo className="xs:w-12 xs:h-12 xl:w-20 xl:h-20" />
+      <Logo className="xs:w-8 xs:h-8 xl:w-18 xl:h-18" />
       <h1 className="ml-1 flex items-center">
-        <span
-          className="xs:text-2xl xl:text-4xl"
-          style={{ letterSpacing: "-0.05em", fontWeight: "900" }}
-        >
-          TED
-        </span>
         <span className="ml-2 mr-1 w-px h-8 bg-current font-light inline-block">
           |
         </span>
@@ -50,7 +44,7 @@ export const Header = ({
     className="pt-5 px-5 font-bold text-2xl text-left xs:text-center flex justify-between"
   >
     {showMainLink ? (
-      <HeaderLink href="https://www.ted.international/en" isMainLink={true} />
+      <HeaderLink href="#" isMainLink={true} />
     ) : (
       <HeaderLink href="/" isMainLink={false} />
     )}

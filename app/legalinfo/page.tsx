@@ -23,7 +23,9 @@ export default function LegalInfo() {
     <div className="theme-text-color min-h-screen">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main className="flex flex-col px-5">
-        <h1 className="font-bold  text-3xl text-center">Legal Information</h1>
+        <h1 className="xs-heading-pages font-bold text-3xl text-center">
+          Legal Information
+        </h1>
       </main>
       {/* <Footer /> */}
     </div>

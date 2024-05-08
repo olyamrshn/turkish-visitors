@@ -23,25 +23,17 @@ export default function About() {
     <div className="theme-text-color min-h-screen">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main className="text-center flex flex-col px-5">
-        <h1 className="font-bold text-3xl">About ADL</h1>
+        <h1 className="xs-heading-pages theme-text-color font-bold text-3xl">
+          About ADL
+        </h1>
         <div
           style={{
             textAlign: "center",
             marginLeft: "auto",
             marginRight: "auto",
           }}
-          className="mt-3 xs:text-base xl:text-lg xs:w-4/5 xl:w-3/5"
+          className="xs-description-pages theme-text-color mt-3 xs:text-base xl:text-lg xs:w-4/5 xl:w-3/5"
         >
-          <p className="mb-3 text-xl font-bold">
-            ADL is a company based in Turkey, specializing in international
-            trade.
-            <br />
-            <span className="text-medium">
-              {" "}
-              We engage in importing and exporting various goods for clients in
-              Turkey and beyond.
-            </span>
-          </p>
           <p>
             {" "}
             Our company collaborates with partners from European and North

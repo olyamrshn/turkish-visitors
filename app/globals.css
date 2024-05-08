@@ -110,6 +110,16 @@
   .xs-arrow {
     fill: white;
   }
+  .xs-heading-pages {
+    color: rgb(var(--theme-text));
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .xs-description-pages {
+    color: rgb(var(--theme-text));
+    font-size: 16px;
+    font-weight: 300;
+  }
 }
 
 body {

@@ -5,8 +5,8 @@ import "./globals.css"
 const raleway = Raleway({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "TED International",
-  description: "The world does not stand still, and neither do we",
+  title: "ADL International",
+  description: "Importing and exporting various goods",
 }
 
 export default function RootLayout({
