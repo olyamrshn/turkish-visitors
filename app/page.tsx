@@ -37,7 +37,7 @@ export default function Home() {
       description: "The world does not stand still, and neither do we",
       icon: (
         <GlobeIcon
-          className="icon-xs-white"
+          className="icon icon-xs-white"
           style={{ width: "26px", height: "26px" }}
         />
       ),
@@ -48,7 +48,7 @@ export default function Home() {
       description: "Easy to start: choose a way to connect!",
       icon: (
         <ContactIcon
-          className="icon-xs-white"
+          className="icon icon-xs-white"
           style={{ width: "26px", height: "26px" }}
         />
       ),
@@ -59,7 +59,7 @@ export default function Home() {
       description: "Keeping Business Flowing Since 1999",
       icon: (
         <InfoIcon
-          className="icon-xs-white"
+          className="icon icon-xs-white"
           style={{ width: "26px", height: "26px" }}
         />
       ),
@@ -79,7 +79,7 @@ export default function Home() {
           We engage in importing and exporting various goods for clients in
           Turkey and beyond.
         </h2>
-        <div className="py-5 grid text-center xs:grid-rows-3 xs:max-w-4xl xl:mb-0 xl:w-full xl:max-w-4xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl-pb-5">
+        <div className="py-5 grid text-center xs:grid-rows-3 xs:max-w-3 xl:mb-0 xl:w-full xl:max-w-4xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl-pb-5">
           {links.map((link, index) => (
             <Link
               key={index}
@@ -89,10 +89,10 @@ export default function Home() {
             dark:hover:bg-white dark:hover:border-white"
             >
               <h2 className="xs-heading link-item mb-3 text-3xl font-semibold flex items-center">
-                <span className="pr-2 icon-xs-white">{link.icon}</span>
+                <span className="icon pr-2 icon-xs-white">{link.icon}</span>
                 {link.text}
-                <span className="arrow-white leading-[140%] -tracking-[0.02em] inline-block transition-transform group-hover:translate-x-3 motion-reduce:transform-none">
-                  <Arrow className="xs-arrow arrow-white" />
+                <span className="arrow arrow-white leading-[140%] -tracking-[0.02em] inline-block transition-transform group-hover:translate-x-3 group-hover:arrow-xl-white motion-reduce:transform-none">
+                  <Arrow className="arrow xs-arrow arrow-white" />
                 </span>
               </h2>
               <p className="xs-description m-0 max-w-[30ch] xl:text-xl opacity-50 group-hover:opacity-100 transition-opacity duration-300">
