@@ -41,6 +41,7 @@ export const Header = ({
 }: HeaderProps) => (
   <header
     key={String(darkMode)}
+    style={{ maxWidth: "1250px", margin: "0 auto" }}
     className="pt-5 px-5 font-bold text-2xl text-left xs:text-center flex justify-between"
   >
     {showMainLink ? (
