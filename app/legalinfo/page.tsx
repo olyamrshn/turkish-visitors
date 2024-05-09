@@ -94,10 +94,9 @@ export default function LegalInfo() {
               <h3 className="font-bold py-2 xs-text-iban xl-text-iban">
                 IBAN for transfers
               </h3>
-              <div>
+              <div className="xs-legal-direction">
                 <div className="xs-iban-text xl-iban-text">
-                  <strong>TL:</strong>
-                  TR970020500009887562800001
+                  <strong>TL:</strong>TR970020500009887562800001
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                     onClick={() =>
@@ -108,9 +107,9 @@ export default function LegalInfo() {
                   </button>
                 </div>
               </div>
-              <div>
+              <div className="xs-legal-direction">
                 <div className="xs-iban-text xl-iban-text">
-                  <strong>USD:</strong> TR160020500009887562800101
+                  <b>USD: </b>TR160020500009887562800101
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                     onClick={() =>
@@ -121,9 +120,9 @@ export default function LegalInfo() {
                   </button>
                 </div>
               </div>
-              <div>
+              <div className="xs-legal-direction">
                 <div className="xs-iban-text xl-iban-text">
-                  <strong>EUR:</strong> TR860020500009887562800102
+                  <strong>EUR: </strong> TR860020500009887562800102
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                     onClick={() =>
@@ -134,9 +133,9 @@ export default function LegalInfo() {
                   </button>
                 </div>
               </div>
-              <div>
+              <div className="xs-legal-direction">
                 <div className="xs-iban-text xl-iban-text">
-                  <strong>RU:</strong> TR590020500009887562800103
+                  <strong>RU: </strong> TR590020500009887562800103
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                     onClick={() =>

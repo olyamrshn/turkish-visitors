@@ -91,8 +91,8 @@
     color: white;
   }
   .xl-logo {
-    width: 50px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 .xl-copy {
   opacity: 0.8;
@@ -136,6 +136,9 @@
 .xl-text-al {
   text-align: left;
 }
+.xl-iban {
+  text-align: left;
+}
 .xl-text-iban {
   text-align: left;
 }
@@ -147,6 +150,11 @@
 }
 .xl-leg-sec-heading {
   font-size: 24px;
+}
+.xl-iban-direction {
+  display: flex;
+  text-align: left;
+  flex-grow: 1;
 }
 }
 
@@ -174,26 +182,23 @@
   }
   .xs-heading-pages {
     color: rgb(var(--theme-text));
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
   }
   .xs-description-pages {
     color: rgb(var(--theme-text));
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
   }
   .xs-logo {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
   }
   .xs-copy {
     opacity: 0.8;
     width: 27px;
     height: 27px;
     cursor: pointer;
-  }
-  .flex-direction-responsive {
-    flex-direction: column;
   }
   .xs-about-text {
     font-size: 14px;
@@ -215,15 +220,32 @@
   .xs-legal-direction {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .xs-iban-direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
   .xs-text-al {
     text-align: center;
   }
+  .xs-iban {
+    text-align: center;
+  }
   .xs-text-iban {
     text-align: center;
+    margin-left: 10px;
+    justify-content: center;
+
   }
   .xs-iban-text {
     display: flex;
+    align-items: center;
     text-align: center;
     flex-grow: 1;
     padding-bottom: 10px;
