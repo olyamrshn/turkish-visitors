@@ -213,8 +213,9 @@ body {
   flex: 1;
 }
 
+/*
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 10wkpx;
 }
 
 ::-webkit-scrollbar {
@@ -229,7 +230,7 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   opacity: 0.7;
-}
+} */
 
 .iban-container {
   display: flex;

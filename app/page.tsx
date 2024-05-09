@@ -74,6 +74,9 @@ export default function Home() {
         showMainLink={true}
       />
       <main className="main-content flex flex-col items-center">
+        <h1 className="xs-heading-pages theme-text-color font-bold text-3xl pt-10">
+          Who We Are
+        </h1>
         <h2 className="xs-description-pages text-center mx-auto mt-5 xs:text-lg xl:text-2xl font-semibold space-y-4 text-content">
           ADL is a company based in Turkey, specializing in international trade.
           We engage in importing and exporting various goods for clients in
@@ -102,7 +105,6 @@ export default function Home() {
           ))}
         </div>
       </main>
-      {/* <Footer /> */}
     </div>
   )
 }

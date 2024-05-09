@@ -2,6 +2,12 @@
 import { useState, useEffect } from "react"
 import { Header } from "../../components/Header"
 import { Ship } from "../../public/svg/ship"
+import {
+  CallIcon,
+  TimerIcon,
+  MailIcon,
+  PinIcon,
+} from "@/public/svg/contacts-group"
 
 export default function Contacts() {
   const [darkMode, setDarkMode] = useState(false)
@@ -29,46 +35,52 @@ export default function Contacts() {
             Contact Us
           </h2>
         </div>
-        <div className="py-7 w-full max-w-4xl text-center justify-center items-center">
-          <div className="text-center flex flex-row justify-center items-center space-x-3">
-            <a
-              href="https://www.google.com/maps/place/AntPlato+Business+Center+Halkalı+Merkez+Dereboyu+Cd.+No:4,+34303,+Küçükçekmece/İstanbul,+Türkiye"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center hover-opacity"
-            >
-              <p className="xs:text-xl xl:text-2xl font-semibold">
-                AntPlato Business Center Halkalı Merkez <br />
-                Dereboyu Cd. No:4, 34303, <br />
-                Küçükçekmece/İstanbul, Türkiye
-              </p>
-            </a>
-          </div>
-          <div className="flex flex-row justify-center items-center space-x-3 text-center py-4">
-            <p className="font-semibold xs:text-lg xl:text-xl">Phone:</p>
-            <span className="font-semibold xs:text-lg xl:text-xl">
+
+        <div className="xs-description-pages py-4 w-full max-w-4xl text-center justify-center items-center">
+          <div className="flex flex-row justify-center items-center space-x-2 text-center py-3">
+            <CallIcon className="w-5 h-5" />
+            <p className="font-normal xs:text-lg xl:text-xl">Phone:</p>
+            <span className="font-thin xs:text-lg xl:text-xl">
               <a href="tel:+905013589608" className="hover-opacity">
                 +90 (501) 358-96-08
               </a>
             </span>
           </div>
 
-          <div className="flex flex-row justify-center items-center space-x-3 text-center py-3">
-            <p className="font-semibold xs:text-lg xl:text-xl">E-mail:</p>
-            <span className="font-semibold xs:text-lg xl:text-xl">
+          <div className="flex flex-row justify-center items-center space-x-2 text-center py-3">
+            <MailIcon className="w-5 h-5" />
+            <p className="font-normal xs:text-lg xl:text-xl">E-mail:</p>
+            <span className="font-thin xs:text-lg xl:text-xl">
               <a href="mailto:info@adl.group" className="hover-opacity">
                 info@adl.group
               </a>
             </span>
           </div>
 
-          <p className="font-semibold xs:text-lg xl:text-xl">
+          <div className="py-3 font-normal items-center justify-center xs:text-lg xl:text-xl flex flex-col">
+            <TimerIcon className="w-5 h-5" />
             Work Hours:
-            <br />
-            <span className="font-normal">Mon-Fri — 10:00-18:00</span>
-            <br />
-            <span className="font-normal">Sat-Sun — Closed</span>
-          </p>
+            <div className="font-thin">Mon-Fri — 10:00-18:00</div>
+            <div className="font-thin">Sat-Sun — Closed</div>
+          </div>
+
+          <div className="xs-description-pages text-center flex flex-col justify-center items-center">
+            <div className="flex items-center justify-center">
+              <PinIcon className="w-5 h-5" />
+            </div>
+            <a
+              href="https://maps.app.goo.gl/FRARmi5RM3Qei5sS9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center hover-opacity"
+            >
+              <p className="xs:text-lg xl:text-xl">
+                AntPlato Business Center Halkalı Merkez <br />
+                Dereboyu Cd. No:4, 34303, <br />
+                Küçükçekmece/İstanbul, Türkiye
+              </p>
+            </a>
+          </div>
         </div>
       </main>
     </div>

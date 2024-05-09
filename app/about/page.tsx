@@ -75,7 +75,15 @@ export default function About() {
             <p className="xs-abot-text xl-abot-text">
               Choose ADL for your next trade deal and secure a reliable partner
               in international trade for your business. Our head office is based
-              at Ant Plato İŞ Merkezi (Küçükçekmece/Istanbul).
+              at{" "}
+              <a
+                href="https://maps.app.goo.gl/FRARmi5RM3Qei5sS9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="items-center hover-opacity font-semibold"
+              >
+                Ant Plato İŞ Merkezi (Küçükçekmece/Istanbul).
+              </a>
             </p>
           </div>
         </div>
