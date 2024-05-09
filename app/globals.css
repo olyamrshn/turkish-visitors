@@ -101,8 +101,28 @@
   cursor: pointer;
   margin-left: 10px;
 }
+
 .flex-direction-responsive {
   flex-direction: row;
+}
+.xl-abot-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.xl-small-about {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.xl-icon-about {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 }
 
@@ -149,6 +169,25 @@
   }
   .flex-direction-responsive {
     flex-direction: column;
+  }
+  .xs-abot-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .xs-small-about {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .xs-icon-about {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
   }
 }
 
@@ -203,4 +242,25 @@ body {
   padding-bottom: 10px;
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  opacity: 0;
+}
+
+.div1 { animation-delay: 1s; }
+.div2 { animation-delay: 2s; }
+.div3 { animation-delay: 3s; }
 

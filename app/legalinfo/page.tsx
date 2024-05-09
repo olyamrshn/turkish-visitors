@@ -65,7 +65,9 @@ export default function LegalInfo() {
             <strong>Bank:</strong> Kuveyt Türk Katılım Bankası A.Ş.
           </p>
           <p className="mb-2">
-            <strong>Bank branch information:</strong> Kartaltepe Mah. Halkalı
+            <strong>Bank branch information:</strong>
+            <br />
+            Kartaltepe Mah. Halkalı
             <br />
             Cad. No:78 Sefaköy Küçükçekmece / Istanbul
           </p>
@@ -80,7 +82,7 @@ export default function LegalInfo() {
                 <strong>TL:</strong>
                 TR970020500009887562800001
                 <button
-                  className="xs-copy xl-copy"
+                  className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                   onClick={() => copyToClipboard("TR970020500009887562800001")}
                 >
                   <CopyIcon />
@@ -91,7 +93,7 @@ export default function LegalInfo() {
               <div className="iban-text">
                 <strong>USD:</strong> TR160020500009887562800101
                 <button
-                  className="xs-copy xl-copy"
+                  className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                   onClick={() => copyToClipboard("TR160020500009887562800101")}
                 >
                   <CopyIcon />
@@ -102,7 +104,7 @@ export default function LegalInfo() {
               <div className="iban-text">
                 <strong>EUR:</strong> TR860020500009887562800102
                 <button
-                  className="xs-copy xl-copy"
+                  className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                   onClick={() => copyToClipboard("TR860020500009887562800102")}
                 >
                   <CopyIcon />
@@ -113,7 +115,7 @@ export default function LegalInfo() {
               <div className="iban-text">
                 <strong>RU:</strong> TR590020500009887562800103
                 <button
-                  className="xs-copy xl-copy"
+                  className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                   onClick={() => copyToClipboard("TR590020500009887562800103")}
                 >
                   <CopyIcon />
