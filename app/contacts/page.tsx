@@ -40,7 +40,7 @@ export default function Contacts() {
           <div className="flex flex-row justify-center items-center space-x-2 text-center py-3">
             <CallIcon className="w-5 h-5" />
             <p className="font-normal xs:text-lg xl:text-xl">Phone:</p>
-            <span className="font-thin xs:text-lg xl:text-xl">
+            <span className="font-normal xs:text-lg xl:text-xl">
               <a href="tel:+905013589608" className="hover-opacity">
                 +90 (501) 358-96-08
               </a>
@@ -50,7 +50,7 @@ export default function Contacts() {
           <div className="flex flex-row justify-center items-center space-x-2 text-center py-3">
             <MailIcon className="w-5 h-5" />
             <p className="font-normal xs:text-lg xl:text-xl">E-mail:</p>
-            <span className="font-thin xs:text-lg xl:text-xl">
+            <span className="font-normal xs:text-lg xl:text-xl">
               <a href="mailto:info@adl.group" className="hover-opacity">
                 info@adl.group
               </a>
@@ -60,8 +60,8 @@ export default function Contacts() {
           <div className="py-3 font-normal items-center justify-center xs:text-lg xl:text-xl flex flex-col">
             <TimerIcon className="w-5 h-5" />
             Work Hours:
-            <div className="font-thin">Mon-Fri — 10:00-18:00</div>
-            <div className="font-thin">Sat-Sun — Closed</div>
+            <div className="font-normal">Mon-Fri — 10:00-18:00</div>
+            <div className="font-normal">Sat-Sun — Closed</div>
           </div>
 
           <div className="xs-description-pages text-center flex flex-col justify-center items-center">

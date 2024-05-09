@@ -34,7 +34,7 @@ export default function Home() {
     {
       href: "/about",
       text: "About",
-      description: "The world does not stand still, and neither do we",
+      description: "Behind the Scenes of Our Operations",
       icon: (
         <GlobeIcon
           className="icon icon-xs-white"
@@ -45,7 +45,7 @@ export default function Home() {
     {
       href: "/contacts",
       text: "Contacts",
-      description: "Easy to start: choose a way to connect!",
+      description: "Get in Touch with Us",
       icon: (
         <ContactIcon
           className="icon icon-xs-white"
@@ -56,7 +56,7 @@ export default function Home() {
     {
       href: "/legalinfo",
       text: "Legal Info",
-      description: "Keeping Business Flowing Since 1999",
+      description: "Corporate Details & Financial Information",
       icon: (
         <InfoIcon
           className="icon icon-xs-white"
@@ -74,15 +74,15 @@ export default function Home() {
         showMainLink={true}
       />
       <main className="main-content flex flex-col items-center">
-        <h1 className="xs-heading-pages theme-text-color font-bold text-3xl pt-10">
+        <h1 className="xs-heading-pages theme-text-color text-3xl pt-10">
           Who We Are
         </h1>
-        <h2 className="xs-description-pages text-center mx-auto mt-5 xs:text-lg xl:text-2xl font-semibold space-y-4 text-content">
+        <h2 className="text-center mx-auto mt-5 xs:text-lg xl:text-2xl font-normal space-y-4 text-content">
           ADL is a company based in Turkey, specializing in international trade.
           We engage in importing and exporting various goods for clients in
           Turkey and beyond.
         </h2>
-        <div className=" py-5 grid text-center xs:grid-rows-3 xs:max-w-1 xl:mb-0 xl:w-full xl:max-w-5xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl:pb-5">
+        <div className="py-5 grid text-center xs:grid-rows-3 xs:max-w-1 xl:mb-0 xl:w-full xl:max-w-5xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl:pb-5">
           {links.map((link, index) => (
             <Link
               key={index}
@@ -98,7 +98,7 @@ export default function Home() {
                   <Arrow className="arrow xs-arrow arrow-white" />
                 </span>
               </h2>
-              <p className="xs-description m-0 max-w-[30ch] xl:text-xl opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="xs:text-lg xl:text-xl m-0 max-w-[30ch] opacity-50 group-hover:opacity-100 transition-opacity duration-300">
                 {link.description}
               </p>
             </Link>

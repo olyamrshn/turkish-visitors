@@ -42,7 +42,7 @@ export default function About() {
         >
           <div className="theme-text-color flex flex-col items-center text-center justify-center pt-3 pb-5">
             <WorldIcon className="xs-icon-about xl-icon-about" />
-            <p className=" xs-about-text xl-about-text">
+            <p className="xs:text-base xl:text-xl">
               Our company collaborates with partners from European and North
               American countries, catering to their needs with a wide range of
               products, including specialized machinery, equipment, automotive
@@ -53,7 +53,7 @@ export default function About() {
 
           <div className="flex flex-col items-center text-center justify-center pb-5 fadeIn div1">
             <LangIcon className="xs-icon-about xl-icon-about" />
-            <p className="xs-small-about xl-small-about ">
+            <p className="xs:text-base xl:text-xl">
               {" "}
               We aim to deliver high-quality products and services, ensuring
               efficiency and reliability in every transaction.
@@ -62,7 +62,7 @@ export default function About() {
 
           <div className="flex flex-col items-center text-center justify-center pb-5 fadeIn div2">
             <PresentationIcon className="xs-icon-about xl-icon-about" />
-            <p className="xs-about-text xl-about-text ">
+            <p className="xs:text-base xl:text-xl">
               Our team consists of experienced professionals ready to provide
               clients with quality solutions for their businesses. ADL is ready
               to partner with companies of all sizes, offering a professional
@@ -72,7 +72,7 @@ export default function About() {
 
           <div className="flex flex-col items-center text-center justify-center pb-5 fadeIn div3">
             <GivingIcon className=" xs-icon-about xl-icon-about" />
-            <p className="xs-about-text xl-about-text">
+            <p className="xs:text-base xl:text-xl">
               Choose ADL for your next trade deal and secure a reliable partner
               in international trade for your business. Our head office is based
               at{" "}
