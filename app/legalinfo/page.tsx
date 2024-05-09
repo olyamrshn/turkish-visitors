@@ -27,7 +27,7 @@ export default function LegalInfo() {
     <div className="theme-text-color min-h-screen">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main className="flex flex-col px-5 pb-10">
-        <h1 className="xs-heading-pages font-bold text-3xl text-center">
+        <h1 className="xs-heading-pages font-bold text-3xl items-center text-center">
           Legal Information
         </h1>
         <div
@@ -36,7 +36,7 @@ export default function LegalInfo() {
             marginLeft: "auto",
             marginRight: "auto",
           }}
-          className="xs-description-pages theme-text-color mt-3 xs:text-base xl:text-lg xs:w-4/5 xl:w-3/5"
+          className="text-center xs-description-pages xl-description-pages theme-text-color mt-3 xl:text-lg xs:w-4/5 xl:w-3/5"
         >
           <p className="mb-2">
             <strong>TIN:</strong> 81863815
@@ -53,10 +53,16 @@ export default function LegalInfo() {
           </p>
           <p className="mb-2">149 Küçükçekmece / İstanbul</p>
           <p className="mb-2">
-            <strong>Phone:</strong> +90 (501) 358 96 08
+            <strong>Phone:</strong>{" "}
+            <a href="tel:+905013589608" className="hover-opacity">
+              +90 (501) 358-96-08
+            </a>
           </p>
           <p className="mb-2">
-            <strong>Email:</strong> info@adl.group
+            <strong>Email:</strong>{" "}
+            <a href="mailto:info@adl.group" className="hover-opacity">
+              info@adl.group
+            </a>
           </p>
           <p className="mb-2">
             <strong>CEO:</strong> Serdar Ziya

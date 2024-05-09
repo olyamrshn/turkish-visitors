@@ -79,7 +79,7 @@ export default function Home() {
           We engage in importing and exporting various goods for clients in
           Turkey and beyond.
         </h2>
-        <div className="py-5 grid text-center xs:grid-rows-3 xs:max-w-1 xl:mb-0 xl:w-full xl:max-w-5xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl:pb-5">
+        <div className=" py-5 grid text-center xs:grid-rows-3 xs:max-w-1 xl:mb-0 xl:w-full xl:max-w-5xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl:pb-5">
           {links.map((link, index) => (
             <Link
               key={index}

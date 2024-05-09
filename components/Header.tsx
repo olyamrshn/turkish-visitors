@@ -15,8 +15,8 @@ interface LogoLinkProps {
 const HeaderLink = ({ href, isMainLink }: LogoLinkProps) => (
   <Link href={href}>
     <div
-      className={` flex flex-row items-center text-left ${
-        isMainLink ? "cursor-default" : "pb-10 hover:opacity-60 cursor-pointer"
+      className={`flex flex-row items-center text-left ${
+        isMainLink ? "cursor-default" : "pb-10 hover:opacity-60 custom-cursor"
       } font-bold text-2xl theme-text-color`}
     >
       <Logo className="xs-logo xl-logo" />

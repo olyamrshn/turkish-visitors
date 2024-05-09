@@ -6,7 +6,7 @@ import {
   LangIcon,
   GivingIcon,
   PresentationIcon,
-} from "../../public/svg/about-gropup"
+} from "../../public/svg/about-group"
 
 export default function About() {
   const [darkMode, setDarkMode] = useState(false)
