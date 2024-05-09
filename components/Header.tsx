@@ -25,9 +25,9 @@ const HeaderLink = ({ href, isMainLink }: LogoLinkProps) => (
           |
         </span>
         <div className="ml-2 text-sm font-light opacity-75">
-          <span>Transport</span>
+          <span>Trade</span>
           <br />
-          <span style={{ whiteSpace: "nowrap" }}>and Logistics</span>
+          <span style={{ whiteSpace: "nowrap" }}>International</span>
         </div>
       </h1>
     </div>

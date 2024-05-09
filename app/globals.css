@@ -15,14 +15,6 @@
   opacity: 0.6;
 }
 
-@media (min-width: 600px) {
-  .text-content {
-    width: 40%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-}
-
 .link-item {
   display: flex;
   align-items: center;
@@ -87,12 +79,17 @@
   .group:hover .arrow {
     fill: white;
   }
+  .text-content {
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
   .group:hover .icon {
     color: white;
   }
   .xl-logo {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 .xl-copy {
   opacity: 0.8;

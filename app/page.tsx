@@ -33,8 +33,8 @@ export default function Home() {
   const links = [
     {
       href: "/about",
-      text: "About",
-      description: "Behind the Scenes of Our Operations",
+      text: "Learn More",
+      description: "Get to know the experts driving your goods forward",
       icon: (
         <GlobeIcon
           className="icon icon-xs-white"
@@ -74,10 +74,10 @@ export default function Home() {
         showMainLink={true}
       />
       <main className="main-content flex flex-col items-center">
-        <h1 className="xs-heading-pages theme-text-color text-3xl pt-10">
+        <h1 className="theme-text-color xs:text-3xl xl:text-2xl pt-10">
           Who We Are
         </h1>
-        <h2 className="text-center mx-auto mt-5 xs:text-lg xl:text-2xl font-normal space-y-4 text-content">
+        <h2 className="text-center mx-auto mt-5 xs:text-lg xl:text-xl font-normal space-y-4 text-content">
           ADL is a company based in Turkey, specializing in international trade.
           We engage in importing and exporting various goods for clients in
           Turkey and beyond.
