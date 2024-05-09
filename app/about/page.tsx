@@ -40,9 +40,9 @@ export default function About() {
           }}
           className="xs-description-pages theme-text-color mt-3 xs:w-4/5 xl:w-3/5"
         >
-          <div className="flex flex-col items-center text-center justify-center pt-3 pb-5">
+          <div className="theme-text-color flex flex-col items-center text-center justify-center pt-3 pb-5">
             <WorldIcon className="xs-icon-about xl-icon-about" />
-            <p className="xs-abot-text xl-abot-text">
+            <p className=" xs-about-text xl-about-text">
               Our company collaborates with partners from European and North
               American countries, catering to their needs with a wide range of
               products, including specialized machinery, equipment, automotive
@@ -62,7 +62,7 @@ export default function About() {
 
           <div className="flex flex-col items-center text-center justify-center pb-5 fadeIn div2">
             <PresentationIcon className="xs-icon-about xl-icon-about" />
-            <p className="xs-abot-text xl-abot-text ">
+            <p className="xs-about-text xl-about-text ">
               Our team consists of experienced professionals ready to provide
               clients with quality solutions for their businesses. ADL is ready
               to partner with companies of all sizes, offering a professional
@@ -72,7 +72,7 @@ export default function About() {
 
           <div className="flex flex-col items-center text-center justify-center pb-5 fadeIn div3">
             <GivingIcon className=" xs-icon-about xl-icon-about" />
-            <p className="xs-abot-text xl-abot-text">
+            <p className="xs-about-text xl-about-text">
               Choose ADL for your next trade deal and secure a reliable partner
               in international trade for your business. Our head office is based
               at{" "}

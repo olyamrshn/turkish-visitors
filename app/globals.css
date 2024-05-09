@@ -108,17 +108,15 @@
 .flex-direction-responsive {
   flex-direction: row;
 }
-.xl-abot-text {
+.xl-about-text {
   font-size: 18px;
   font-weight: 300;
-  color: white;
   padding-top: 7px;
   padding-bottom: 7px;
 }
 .xl-small-about {
   font-size: 20px;
   font-weight: 300;
-  color: white;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -126,6 +124,29 @@
   width: 30px;
   height: 30px;
   margin-bottom: 10px;
+}
+.xl-legal-direction {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 3em;
+  gap: 35px;
+}
+.xl-text-al {
+  text-align: left;
+}
+.xl-text-iban {
+  text-align: left;
+}
+.xl-iban-text {
+  display: flex;
+  text-align: left;
+  flex-grow: 1;
+  padding-bottom: 10px;
+}
+.xl-leg-sec-heading {
+  font-size: 24px;
 }
 }
 
@@ -174,17 +195,15 @@
   .flex-direction-responsive {
     flex-direction: column;
   }
-  .xs-abot-text {
+  .xs-about-text {
     font-size: 14px;
     font-weight: 300;
-    color: white;
     padding-top: 10px;
     padding-bottom: 10px;
   }
   .xs-small-about {
     font-size: 16px;
     font-weight: 300;
-    color: white;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -192,6 +211,29 @@
     width: 20px;
     height: 20px;
     margin-bottom: 8px;
+  }
+  .xs-legal-direction {
+    display: flex;
+    flex-direction: column;
+  }
+  .xs-text-al {
+    text-align: center;
+  }
+  .xs-text-iban {
+    text-align: center;
+  }
+  .xs-iban-text {
+    display: flex;
+    text-align: center;
+    flex-grow: 1;
+    padding-bottom: 10px;
+  }
+  .xs-leg-sec-heading {
+    font-size: 17px;
+    padding-top: 5px;
+    text-decoration: underline;
+    text-underline-Offset: 5px;
+    text-decoration-thickness: 0.3px;
   }
 }
 
@@ -211,40 +253,6 @@ body {
 
 .main-content {
   flex: 1;
-}
-
-/*
-::-webkit-scrollbar {
-  width: 10wkpx;
-}
-
-::-webkit-scrollbar {
-  background: #13285b;
-}
-
-::-webkit-scrollbar-thumb {
-  color: "#fff";
-  border-radius: 5px;
-  width: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  opacity: 0.7;
-} */
-
-.iban-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-items: center;
-}
-
-.iban-text {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  padding-bottom: 10px;
 }
 
 .icon-container {
