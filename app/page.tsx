@@ -67,16 +67,14 @@ export default function Home() {
   ]
 
   return (
-    <div className="theme-text-color min-h-screen">
+    <div className="min-h-screen">
       <Header
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
         showMainLink={true}
       />
-      <main className="main-content flex flex-col items-center">
-        <h1 className="theme-text-color xs:text-3xl xl:text-2xl pt-10">
-          Who We Are
-        </h1>
+      <main className="theme-text-color main-content flex flex-col items-center">
+        <h1 className="theme-text-color xs-who xl-who">Who We Are</h1>
         <h2 className="text-center mx-auto mt-5 xs:text-lg xl:text-xl font-normal space-y-4 text-content">
           ADL is a company based in Turkey, specializing in international trade.
           We engage in importing and exporting various goods for clients in
@@ -87,7 +85,7 @@ export default function Home() {
             <Link
               key={index}
               href={link.href}
-              className="mb-2 group rounded-2xl border border-none px-4 pt-2 pb-20 transition-colors flex flex-col justify-start xs-always-blue
+              className="mb-2 group rounded-2xl border-gray-200 border-1 px-4 pt-2 pb-20 flex flex-col justify-start xs-always-blue
             hover:bg-custom-blue hover:border-darker-blue
             dark:hover:bg-white dark:hover:border-white"
             >

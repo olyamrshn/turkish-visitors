@@ -1,7 +1,7 @@
 export const Logo = ({ className }: { className: string }) => (
   <svg
     className={className}
-    color="rgb(var(--svg-fill-color))"
+    color="#fff"
     viewBox="0 0 952.000000 522.000000"
     preserveAspectRatio="xMidYMid meet"
   >

@@ -2,12 +2,7 @@ export const Moon: React.FC<{
   style: React.CSSProperties
   className?: string
 }> = ({ style, className }) => (
-  <svg
-    style={style}
-    className={className}
-    color="rgb(var(--svg-fill-color))"
-    viewBox="0 0 24 24"
-  >
+  <svg style={style} className={className} color="#fff" viewBox="0 0 24 24">
     <path
       stroke="currentColor"
       fill="none"

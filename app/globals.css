@@ -47,6 +47,10 @@
   color: rgb(var(--theme-text-hover));
 }
 
+.header-bg-color {
+  background-color:rgb(var(--header-bg-color));
+}
+
 :root {
   --theme-text: 8, 40, 126;
   --theme-text-hover: 255, 255, 255;
@@ -54,6 +58,7 @@
   --background-end-rgb: 255, 255, 255;
   --svg-fill-color: 8, 40, 126;
   --svg-hover-color: 255, 255, 255;
+  --header-bg-color: 110, 35, 17;
 }
 
 .dark-theme {
@@ -63,6 +68,7 @@
   --background-end-rgb: 0, 18, 45;
   --svg-fill-color: 255, 255, 255;
   --svg-hover-color: 255, 255, 255;
+  --header-bg-color: 8, 37, 115;
   .dark-theme .xs-always-blue {
     background-color: #073098;
     color: white;
@@ -83,6 +89,9 @@
     width: 40%;
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+  .xl-who {
+    font-size: 30px;
   }
   .group:hover .icon {
     color: white;
@@ -141,6 +150,10 @@
   text-align: left;
   flex-grow: 1;
 }
+.xl-headerline {
+  font-size: 35px;
+  height: 10;
+}
 }
 
 @media (max-width: 600px) {
@@ -164,6 +177,9 @@
   }
   .xs-arrow {
     fill: white;
+  }
+  .xs-who {
+    font-size: 20px;
   }
   .xs-heading-pages {
     color: rgb(var(--theme-text));
@@ -229,6 +245,10 @@
     text-decoration: underline;
     text-underline-Offset: 5px;
     text-decoration-thickness: 0.3px;
+  }
+  .xs-headerline {
+    font-size: 28px;
+    height: 8;
   }
 }
 
