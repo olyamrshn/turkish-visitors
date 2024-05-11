@@ -114,7 +114,7 @@ export default function Home() {
       </main>
 
       <footer
-        className="xs-footer xl-footer text-xs bg-blue-200 py-2"
+        className="xs-footer xl-footer text-xs bg-blue-200 py-4 xs-footer-leftpadding xl-footer-leftpadding"
         style={{ backgroundColor: "rgb(63 90 181)" }}
       >
         <div className="flex flex-row items-center space-x-">

@@ -50,9 +50,8 @@ export const Header = ({
       margin: "0 auto",
       maxHeight: "90px",
       marginBottom: "30px",
-      padding: "0 20px",
     }}
-    className="px-5 pt-2 font-bold text-2xl header-bg-color text-left xs:text-center flex justify-between"
+    className="px-5 pt-2 font-bold text-2xl header-bg-color text-left flex justify-between"
   >
     {showMainLink ? (
       <HeaderLink href="#" isMainLink={true} />

@@ -163,6 +163,9 @@
   width: 28px;
   height: 28px;
 }
+.xl-footer-leftpadding {
+  padding-left: 20px;
+}
 }
 
 @media (max-width: 600px) {
@@ -267,6 +270,9 @@
   .xs-footer-logo {
     width: 28px;
     height: 28px;
+  }
+  .xs-footer-leftpadding {
+    padding-left: 20px;
   }
 }
 
