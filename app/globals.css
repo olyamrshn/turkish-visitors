@@ -154,6 +154,15 @@
   font-size: 35px;
   height: 10;
 }
+.xl-footer {
+  padding-left: 20px;
+  display: "flex";
+  flex-direction: "row";
+}
+.xl-footer-logo {
+  width: 28px;
+  height: 28px;
+}
 }
 
 @media (max-width: 600px) {
@@ -250,6 +259,15 @@
     font-size: 28px;
     height: 8;
   }
+  .xs-footer {
+    padding-left: 8px;
+    display: "flex";
+    flex-direction: "column";
+  }
+  .xs-footer-logo {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 body {
@@ -267,7 +285,8 @@ body {
 }
 
 .main-content {
-  flex: 1;
+  flex-grow: 1;
+  min-height: 0;
 }
 
 .icon-container {

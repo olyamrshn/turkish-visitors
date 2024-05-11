@@ -25,9 +25,9 @@ const HeaderLink = ({ href, isMainLink }: LogoLinkProps) => (
           |
         </span>
         <div className="ml-2 text-xs font-light opacity-75">
-          <span>international trade</span>
+          <span>International Trade</span>
           <br />
-          <span style={{ whiteSpace: "nowrap" }}>& communication</span>
+          <span style={{ whiteSpace: "nowrap" }}>& Communication</span>
         </div>
       </h1>
     </div>
@@ -42,10 +42,15 @@ export const Header = ({
   <header
     key={String(darkMode)}
     style={{
-      maxWidth: "1650px",
       color: "white",
+      justifyContent: "space-between",
+      display: "flex",
+      flexDirection: "row",
+      width: "100%",
       margin: "0 auto",
+      maxHeight: "90px",
       marginBottom: "30px",
+      padding: "0 20px",
     }}
     className="px-5 pt-2 font-bold text-2xl header-bg-color text-left xs:text-center flex justify-between"
   >

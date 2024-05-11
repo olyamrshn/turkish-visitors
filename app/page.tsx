@@ -6,6 +6,7 @@ import { Arrow } from "../public/svg/arrow"
 import { ContactIcon } from "../public/svg/contacts"
 import { GlobeIcon } from "../public/svg/globe"
 import { InfoIcon } from "../public/svg/info"
+import { Logo } from "../public/svg/logo"
 
 const Header = dynamic(
   () => import("../components/Header").then((mod) => mod.Header),
@@ -67,7 +68,15 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen">
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        width: "100%",
+        maxWidth: "100%",
+      }}
+    >
       <Header
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
@@ -103,6 +112,18 @@ export default function Home() {
           ))}
         </div>
       </main>
+
+      <footer
+        className="xs-footer xl-footer text-xs bg-blue-200 py-2"
+        style={{ backgroundColor: "rgb(63 90 181)" }}
+      >
+        <div className="flex flex-row items-center space-x-">
+          <Logo className="xs-footer-logo xl-footer-logo" />
+          <p style={{ color: "white", paddingLeft: "2px" }}>Logistic Company</p>
+        </div>
+
+        <p style={{ color: "white" }}>© 2024 ADL. All rights reserved.</p>
+      </footer>
     </div>
   )
 }
