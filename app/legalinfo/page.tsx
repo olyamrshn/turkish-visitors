@@ -37,20 +37,6 @@ export default function LegalInfo() {
       }}
     >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <div className="flex flex-row justify-between pb-5">
-        <Link href="/contacts">
-          <button className="theme-text-color flex flex-row items-center justify-center border px-2 py-1 rounded-full">
-            {/* <ArrowLeft className="w-10 h-10 theme-text-color" /> */}
-            <p className="xs-buttontext xl-buttontext">Contacts</p>
-          </button>
-        </Link>
-        <Link href="/">
-          <button className="theme-text-color flex flex-row items-center justify-center border px-2 py-1 rounded-full">
-            <p className="xs-buttontext xl-buttontext">Homepage</p>
-            {/* <ArrowRight className="w-10 h-10 theme-text-color ml-3" /> */}
-          </button>
-        </Link>
-      </div>
       <main className="main-content flex flex-col px-5 pb-10 xs:space-x-0 xl:space-x-20">
         <h1 className="xs-heading-pages theme-text-color font-bold text-3xl items-center text-center">
           Legal Information
@@ -174,6 +160,18 @@ export default function LegalInfo() {
             </div>
             <p>SWIFT code: KTEFTRIS</p>
           </div>
+        </div>
+        <div
+          style={{ margin: "0 auto", marginTop: "40px", marginBottom: "50px" }}
+        >
+          <Link href="/">
+            <button className="theme-text-color flex flex-row items-center text-center justify-center border px-2 py-1 rounded-full">
+              <p className="xs-buttontext xl-buttontext pl-3 pr-2">
+                Back to Homepage
+              </p>
+              <ArrowRight className="w-10 h-10 theme-text-color" />
+            </button>
+          </Link>
         </div>
       </main>
       <Footer />
