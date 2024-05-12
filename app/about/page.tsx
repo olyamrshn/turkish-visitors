@@ -103,7 +103,7 @@ export default function About() {
           }}
         >
           <Link href="/contacts">
-            <button className="theme-text-color flex flex-row items-center text-center justify-center border px-2 py-1 rounded-full">
+            <button className="hover:shadow theme-text-color flex flex-row items-center text-center justify-center border px-2 py-1 rounded-full">
               <p className="xs-buttontext xl-buttontext pl-3 pr-2 flex items-center justify-center">
                 Contacts
               </p>

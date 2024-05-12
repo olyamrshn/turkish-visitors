@@ -173,7 +173,7 @@
   padding-bottom: 20px;
 }
 .xl-buttontext {
-  font-size: 14px;
+  font-size: 16px;
 }
 }
 
@@ -348,4 +348,7 @@ body {
   animation: slideRight 3s ease-out forwards;
 }
 
+.hover\:shadow:hover {
+  box-shadow: 0 5px 8px -3px;
+}
 
