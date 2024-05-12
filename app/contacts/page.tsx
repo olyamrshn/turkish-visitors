@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import { Header } from "../../components/Header"
 import { Ship } from "../../public/svg/ship"
+import { Logo } from "../../public/svg/logo"
 import {
   CallIcon,
   TimerIcon,
@@ -26,9 +27,17 @@ export default function Contacts() {
   }, [])
 
   return (
-    <div className="theme-text-color min-h-screen">
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        width: "100%",
+        maxWidth: "100%",
+      }}
+    >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="flex flex-col items-center px-5">
+      <main className="main-content flex flex-col items-center px-5">
         <Ship />
         <div className="flex flex-row pt-5 justify-center items-center">
           <h2 className="xs-heading-pages font-bold text-3xl text-center pr-2">
@@ -83,6 +92,17 @@ export default function Contacts() {
           </div>
         </div>
       </main>
+      <footer
+        className="xs-footer xl-footer text-xs bg-blue-200 py-4 xs-footer-leftpadding xl-footer-leftpadding"
+        style={{ backgroundColor: "rgb(63 90 181)" }}
+      >
+        <div className="flex flex-row items-center space-x-">
+          <Logo className="xs-footer-logo xl-footer-logo" />
+          <p style={{ color: "white", paddingLeft: "2px" }}>Logistic Company</p>
+        </div>
+
+        <p style={{ color: "white" }}>© 2024 ADL. All rights reserved.</p>
+      </footer>
     </div>
   )
 }

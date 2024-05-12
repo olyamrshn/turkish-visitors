@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import { Header } from "../../components/Header"
 import { CopyIcon } from "@/public/svg/copy"
+import { Logo } from "../../public/svg/logo"
 
 export default function LegalInfo() {
   const [darkMode, setDarkMode] = useState(false)
@@ -24,9 +25,17 @@ export default function LegalInfo() {
   }
 
   return (
-    <div className="theme-text-color min-h-screen">
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        width: "100%",
+        maxWidth: "100%",
+      }}
+    >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="flex flex-col px-5 pb-10 xs:space-x-0 xl:space-x-20">
+      <main className="main-content flex flex-col px-5 pb-10 xs:space-x-0 xl:space-x-20">
         <h1 className="xs-heading-pages font-bold text-3xl items-center text-center">
           Legal Information
         </h1>
@@ -151,6 +160,17 @@ export default function LegalInfo() {
           </div>
         </div>
       </main>
+      <footer
+        className="xs-footer xl-footer text-xs bg-blue-200 py-4 xs-footer-leftpadding xl-footer-leftpadding"
+        style={{ backgroundColor: "rgb(63 90 181)" }}
+      >
+        <div className="flex flex-row items-center space-x-">
+          <Logo className="xs-footer-logo xl-footer-logo" />
+          <p style={{ color: "white", paddingLeft: "2px" }}>Logistic Company</p>
+        </div>
+
+        <p style={{ color: "white" }}>© 2024 ADL. All rights reserved.</p>
+      </footer>
     </div>
   )
 }

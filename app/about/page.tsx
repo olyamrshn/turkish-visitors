@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 import { Header } from "../../components/Header"
+import { Logo } from "../../public/svg/logo"
 import {
   WorldIcon,
   LangIcon,
@@ -25,9 +26,17 @@ export default function About() {
   }, [])
 
   return (
-    <div className="theme-text-color min-h-screen">
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        width: "100%",
+        maxWidth: "100%",
+      }}
+    >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="text-center flex flex-col px-5 py-15">
+      <main className="main-content text-center flex flex-col px-5 py-15">
         <h1 className="xs-heading-pages theme-text-color font-bold text-3xl">
           About ADL
         </h1>
@@ -88,6 +97,17 @@ export default function About() {
           </div>
         </div>
       </main>
+      <footer
+        className="xs-footer xl-footer text-xs bg-blue-200 py-4 xs-footer-leftpadding xl-footer-leftpadding"
+        style={{ backgroundColor: "rgb(63 90 181)" }}
+      >
+        <div className="flex flex-row items-center space-x-">
+          <Logo className="xs-footer-logo xl-footer-logo" />
+          <p style={{ color: "white", paddingLeft: "2px" }}>Logistic Company</p>
+        </div>
+
+        <p style={{ color: "white" }}>© 2024 ADL. All rights reserved.</p>
+      </footer>
     </div>
   )
 }
