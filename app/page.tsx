@@ -7,6 +7,7 @@ import { ContactIcon } from "../public/svg/contacts"
 import { GlobeIcon } from "../public/svg/globe"
 import { InfoIcon } from "../public/svg/info"
 import Footer from "../components/Footer"
+import Image from "next/image"
 
 const Header = dynamic(
   () => import("../components/Header").then((mod) => mod.Header),
@@ -111,6 +112,13 @@ export default function Home() {
             </Link>
           ))}
         </div>
+        <Image
+          src="https://images.omrshn.dev/ship-bridge.jpeg"
+          alt="continer ship image"
+          width="800"
+          height={200 * 0.3}
+          className="xs-image-ship xl-image-ship"
+        ></Image>
       </main>
       <Footer />
     </div>
