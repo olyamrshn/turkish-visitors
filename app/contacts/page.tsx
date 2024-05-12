@@ -93,14 +93,14 @@ export default function Contacts() {
           </div>
         </div>
         <div
-          style={{ margin: "0 auto", marginTop: "40px", marginBottom: "50px" }}
+          style={{ margin: "0 auto", marginTop: "40px", marginBottom: "40px" }}
         >
           <Link href="/legalinfo">
             <button className="theme-text-color flex flex-row items-center text-center justify-center border px-2 py-1 rounded-full">
               <p className="xs-buttontext xl-buttontext pl-3 pr-2">
                 Legal Info
               </p>
-              <ArrowRight className="w-10 h-10 theme-text-color" />
+              <ArrowRight className="w-10 h-10 theme-text-color mt-1" />
             </button>
           </Link>
         </div>

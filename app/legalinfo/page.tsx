@@ -114,7 +114,7 @@ export default function LegalInfo() {
               </h3>
               <div className="xs-legal-direction">
                 <div className="xs-iban-text xl-iban-text">
-                  <strong>TL:</strong>TR970020500009887562800001
+                  <strong>TL:</strong> TR970020500009887562800001
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                     onClick={() => handleCopy("TR970020500009887562800001")}
@@ -129,7 +129,7 @@ export default function LegalInfo() {
               </div>
               <div className="xs-legal-direction">
                 <div className="xs-iban-text xl-iban-text">
-                  <b>USD: </b>TR160020500009887562800101
+                  <b>USD: </b> TR160020500009887562800101
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                     onClick={() => handleCopy("TR160020500009887562800101")}
@@ -144,7 +144,7 @@ export default function LegalInfo() {
               </div>
               <div className="xs-legal-direction">
                 <div className="xs-iban-text xl-iban-text">
-                  <strong>EUR: </strong>TR860020500009887562800102
+                  <strong>EUR: </strong> TR860020500009887562800102
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
                     onClick={() => handleCopy("TR860020500009887562800102")}
@@ -173,18 +173,20 @@ export default function LegalInfo() {
                 </div>
               </div>
             </div>
-            <p>SWIFT code: KTEFTRIS</p>
+            <p>
+              <strong>SWIFT code:</strong> KTEFTRIS
+            </p>
           </div>
         </div>
         <div
-          style={{ margin: "0 auto", marginTop: "40px", marginBottom: "50px" }}
+          style={{ margin: "0 auto", marginTop: "40px", marginBottom: "40px" }}
         >
           <Link href="/">
             <button className="theme-text-color flex flex-row items-center text-center justify-center border px-2 py-1 rounded-full">
               <p className="xs-buttontext xl-buttontext pl-3 pr-2">
                 Back to Homepage
               </p>
-              <ArrowRight className="w-10 h-10 theme-text-color" />
+              <ArrowRight className="mt-1 w-10 h-10 theme-text-color" />
             </button>
           </Link>
         </div>

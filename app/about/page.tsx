@@ -95,11 +95,19 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div style={{ margin: "0 auto", marginBottom: "50px" }}>
+        <div
+          style={{
+            margin: "0 auto",
+            marginBottom: "50px",
+            alignItems: "center",
+          }}
+        >
           <Link href="/contacts">
             <button className="theme-text-color flex flex-row items-center text-center justify-center border px-2 py-1 rounded-full">
-              <p className="xs-buttontext xl-buttontext pl-3 pr-2">Contacts</p>
-              <ArrowRight className="w-10 h-10 theme-text-color" />
+              <p className="xs-buttontext xl-buttontext pl-3 pr-2 flex items-center justify-center">
+                Contacts
+              </p>
+              <ArrowRight className="w-10 h-10 mt-1 theme-text-color flex items-center justify-center" />
             </button>
           </Link>
         </div>
