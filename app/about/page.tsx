@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 import { Header } from "../../components/Header"
-import { Logo } from "../../public/svg/logo"
+import Footer from "../../components/Footer"
 import {
   WorldIcon,
   TruckIcon,
@@ -97,17 +97,7 @@ export default function About() {
           </div>
         </div>
       </main>
-      <footer
-        className="xs-footer xl-footer text-xs bg-blue-200 py-4 xs-footer-leftpadding xl-footer-leftpadding"
-        style={{ backgroundColor: "rgb(63 90 181)" }}
-      >
-        <div className="flex flex-row items-center space-x-">
-          <Logo className="xs-footer-logo xl-footer-logo" />
-          <p style={{ color: "white", paddingLeft: "2px" }}>Logistic Company</p>
-        </div>
-
-        <p style={{ color: "white" }}>© 2024 ADL. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   )
 }

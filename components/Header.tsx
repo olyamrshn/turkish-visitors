@@ -48,7 +48,8 @@ export const Header = ({
       flexDirection: "row",
       width: "100%",
       margin: "0 auto",
-      maxHeight: "90px",
+      maxHeight: "80px",
+      alignItems: "center",
       marginBottom: "30px",
     }}
     className="px-5 pt-2 font-bold text-2xl header-bg-color text-left flex justify-between"
@@ -59,7 +60,7 @@ export const Header = ({
       <HeaderLink href="/" isMainLink={false} />
     )}
     <div>
-      <button className="pt-3 relative" onClick={toggleDarkMode}>
+      <button className="relative" onClick={toggleDarkMode}>
         {darkMode ? (
           <Moon
             className="xs:w-7 xs:h-7 xl:w-9 xl:h-9"
