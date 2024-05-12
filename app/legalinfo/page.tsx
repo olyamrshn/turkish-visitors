@@ -39,15 +39,15 @@ export default function LegalInfo() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <div className="flex flex-row justify-between pb-5">
         <Link href="/contacts">
-          <button className="theme-text-color flex flex-row items-center justify-center">
-            <ArrowLeft className="w-10 h-10 theme-text-color" />
+          <button className="theme-text-color flex flex-row items-center justify-center border px-2 py-1 rounded-full">
+            {/* <ArrowLeft className="w-10 h-10 theme-text-color" /> */}
             <p className="xs-buttontext xl-buttontext">Contacts</p>
           </button>
         </Link>
         <Link href="/">
-          <button className="theme-text-color flex flex-row items-center justify-center">
+          <button className="theme-text-color flex flex-row items-center justify-center border px-2 py-1 rounded-full">
             <p className="xs-buttontext xl-buttontext">Homepage</p>
-            <ArrowRight className="w-10 h-10 theme-text-color ml-3" />
+            {/* <ArrowRight className="w-10 h-10 theme-text-color ml-3" /> */}
           </button>
         </Link>
       </div>

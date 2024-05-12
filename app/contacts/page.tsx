@@ -39,17 +39,17 @@ export default function Contacts() {
       }}
     >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <div className="flex flex-row justify-between pb-5">
+      <div className="flex flex-row justify-between pb-5 px-5">
         <Link href="/about">
-          <button className="theme-text-color flex flex-row items-center justify-center">
-            <ArrowLeft className="w-10 h-10 theme-text-color" />
+          <button className="theme-text-color flex flex-row items-center justify-center border px-2 py-1 rounded-full">
+            {/* <ArrowLeft className="w-10 h-10 theme-text-color" /> */}
             <p className="xs-buttontext xl-buttontext">About</p>
           </button>
         </Link>
         <Link href="/legalinfo">
-          <button className="theme-text-color flex flex-row items-center justify-center">
+          <button className="theme-text-color flex flex-row items-center justify-center border px-2 py-1 rounded-full">
             <p className="xs-buttontext xl-buttontext">Legal Info</p>
-            <ArrowRight className="w-10 h-10 theme-text-color ml-3" />
+            {/* <ArrowRight className="w-10 h-10 theme-text-color ml-3" /> */}
           </button>
         </Link>
       </div>
