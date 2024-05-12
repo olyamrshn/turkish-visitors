@@ -18,6 +18,14 @@ const Header = dynamic(
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+  const [opacity, setOpacity] = useState(1)
+
+  const images = [
+    "https://images.omrshn.dev/topcontainers.jpeg",
+    "https://images.omrshn.dev/logisticcars.jpeg",
+    "https://images.omrshn.dev/newseagulls.png",
+  ]
 
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode
@@ -25,6 +33,17 @@ export default function Home() {
     document.body.classList.toggle("dark-theme", newDarkMode)
     localStorage.setItem("darkMode", newDarkMode.toString())
   }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setOpacity(0)
+      setTimeout(() => {
+        setImageIndex((prevIndex) => (prevIndex + 1) % images.length)
+        setOpacity(1)
+      }, 500)
+    }, 6000)
+    return () => clearInterval(interval)
+  }, [])
 
   useEffect(() => {
     const savedDarkMode = localStorage.getItem("darkMode") === "true"
@@ -113,12 +132,17 @@ export default function Home() {
           ))}
         </div>
         <Image
-          src="https://images.omrshn.dev/ship-bridge.jpeg"
-          alt="continer ship image"
           width="800"
-          height={200 * 0.3}
+          height="400"
+          src={images[imageIndex]}
+          alt="container ship image"
+          style={{
+            opacity: opacity,
+            transition: "opacity 0.5s ease-in-out",
+            objectFit: "fill",
+          }}
           className="xs-image-ship xl-image-ship"
-        ></Image>
+        />
       </main>
       <Footer />
     </div>
