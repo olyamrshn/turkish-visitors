@@ -36,7 +36,7 @@ export default function LegalInfo() {
     >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main className="main-content flex flex-col px-5 pb-10 xs:space-x-0 xl:space-x-20">
-        <h1 className="xs-heading-pages font-bold text-3xl items-center text-center">
+        <h1 className="xs-heading-pages theme-text-color font-bold text-3xl items-center text-center">
           Legal Information
         </h1>
         <div

@@ -4,7 +4,7 @@ import { Header } from "../../components/Header"
 import { Logo } from "../../public/svg/logo"
 import {
   WorldIcon,
-  LangIcon,
+  TruckIcon,
   GivingIcon,
   PresentationIcon,
 } from "../../public/svg/about-group"
@@ -61,7 +61,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col items-center text-center justify-center pb-5 fadeIn div1">
-            <LangIcon className="xs-icon-about xl-icon-about" />
+            <TruckIcon className="xs-icon-about xl-icon-about" />
             <p className="xs:text-base xl:text-xl">
               {" "}
               We aim to deliver high-quality products and services, ensuring
@@ -70,7 +70,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col items-center text-center justify-center pb-5 fadeIn div2">
-            <PresentationIcon className="xs-icon-about xl-icon-about" />
+            <GivingIcon className="xs-icon-about xl-icon-about" />
             <p className="xs:text-base xl:text-xl">
               Our team consists of experienced professionals ready to provide
               clients with quality solutions for their businesses. ADL is ready
@@ -80,7 +80,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col items-center text-center justify-center pb-5 fadeIn div3">
-            <GivingIcon className=" xs-icon-about xl-icon-about" />
+            <PresentationIcon className=" xs-icon-about xl-icon-about" />
             <p className="xs:text-base xl:text-xl">
               Choose ADL for your next trade deal and secure a reliable partner
               in international trade for your business. Our head office is based

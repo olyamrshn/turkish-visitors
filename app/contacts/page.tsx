@@ -37,16 +37,15 @@ export default function Contacts() {
       }}
     >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="main-content flex flex-col items-center px-5">
+      <main className="theme-text-color main-content flex flex-col items-center px-5">
         <Ship />
         <div className="flex flex-row pt-5 justify-center items-center">
           <h2 className="xs-heading-pages font-bold text-3xl text-center pr-2">
             Contact Us
           </h2>
         </div>
-
         <div className="xs-description-pages py-4 w-full max-w-4xl text-center justify-center items-center">
-          <div className="flex flex-row justify-center items-center space-x-2 text-center py-3">
+          <div className=" flex flex-row justify-center items-center space-x-2 text-center py-3">
             <CallIcon className="w-5 h-5" />
             <p className="font-normal xs:text-lg xl:text-xl">Phone:</p>
             <span className="font-normal xs:text-lg xl:text-xl">

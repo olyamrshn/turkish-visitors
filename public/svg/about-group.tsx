@@ -31,34 +31,19 @@ export const WorldIcon = ({ className }: { className?: string }) => (
   </svg>
 )
 
-export const LangIcon = ({ className }: { className?: string }) => (
+export const TruckIcon = ({ className }: { className?: string }) => (
   <svg
     className={className}
     color="rgb(var(--svg-fill-color))"
     fill="none"
     viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M6.75 4.75C5.64543 4.75 4.75 5.64543 4.75 6.75V14.25C4.75 15.3546 5.64543 16.25 6.75 16.25H10.75C11.3023 16.25 11.75 16.6977 11.75 17.25V19.25L14.9055 16.6955C15.2616 16.4073 15.7058 16.25 16.1639 16.25H17.25C18.3546 16.25 19.25 15.3546 19.25 14.25V6.75C19.25 5.64543 18.3546 4.75 17.25 4.75H6.75Z"
       stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    ></path>
-    <path
-      d="M9.75 13.25L12 7.75L14.25 13.25"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    ></path>
-    <path
-      d="M11 11.25H13"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      d="m17 11.25 1.864 1.45a1 1 0 0 1 .386.79v2.76a.75.75 0 0 1-.75.75h-.323M17 11.25l-.85-4.679a1 1 0 0 0-.985-.821H11.75m5.25 5.5h-3.25a2 2 0 0 1-2-2v-3.5M5.822 17H4.75V6.75a1 1 0 0 1 1-1h6m-2.518 11.5h5.536m3.41-.25a1.75 1.75 0 1 0-3.356 1.001A1.75 1.75 0 0 0 18.177 17Zm-8.928.5a1.75 1.75 0 1 1-3.5 0 1.75 1.75 0 0 1 3.5 0Z"
     ></path>
   </svg>
 )
