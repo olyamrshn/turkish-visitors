@@ -3,7 +3,8 @@ import { useState, useEffect } from "react"
 import { Header } from "../../components/Header"
 import Footer from "../../components/Footer"
 import { Ship } from "../../public/svg/ship"
-import { Logo } from "../../public/svg/logo"
+import Link from "next/link"
+import { ArrowLeft, ArrowRight } from "@/public/svg/arrows"
 import {
   CallIcon,
   TimerIcon,
@@ -38,6 +39,20 @@ export default function Contacts() {
       }}
     >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <div className="flex flex-row justify-between pb-5">
+        <Link href="/about">
+          <button className="theme-text-color flex flex-row items-center justify-center">
+            <ArrowLeft className="w-10 h-10 theme-text-color" />
+            <p className="xs-buttontext xl-buttontext">About</p>
+          </button>
+        </Link>
+        <Link href="/legalinfo">
+          <button className="theme-text-color flex flex-row items-center justify-center">
+            <p className="xs-buttontext xl-buttontext">Legal Info</p>
+            <ArrowRight className="w-10 h-10 theme-text-color ml-3" />
+          </button>
+        </Link>
+      </div>
       <main className="theme-text-color main-content flex flex-col items-center px-5">
         <Ship />
         <div className="flex flex-row pt-5 justify-center items-center">

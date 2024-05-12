@@ -1,4 +1,3 @@
-// export const Arrow = () => (
 export const Arrow = ({ className }: { className?: string }) => (
   <svg
     className={className}

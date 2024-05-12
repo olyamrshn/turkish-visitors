@@ -3,6 +3,8 @@ import { useState, useEffect } from "react"
 import { Header } from "../../components/Header"
 import Footer from "../../components/Footer"
 import { CopyIcon } from "@/public/svg/copy"
+import Link from "next/link"
+import { ArrowLeft, ArrowRight } from "@/public/svg/arrows"
 
 export default function LegalInfo() {
   const [darkMode, setDarkMode] = useState(false)
@@ -35,6 +37,20 @@ export default function LegalInfo() {
       }}
     >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <div className="flex flex-row justify-between pb-5">
+        <Link href="/contacts">
+          <button className="theme-text-color flex flex-row items-center justify-center">
+            <ArrowLeft className="w-10 h-10 theme-text-color" />
+            <p className="xs-buttontext xl-buttontext">Contacts</p>
+          </button>
+        </Link>
+        <Link href="/">
+          <button className="theme-text-color flex flex-row items-center justify-center">
+            <p className="xs-buttontext xl-buttontext">Homepage</p>
+            <ArrowRight className="w-10 h-10 theme-text-color ml-3" />
+          </button>
+        </Link>
+      </div>
       <main className="main-content flex flex-col px-5 pb-10 xs:space-x-0 xl:space-x-20">
         <h1 className="xs-heading-pages theme-text-color font-bold text-3xl items-center text-center">
           Legal Information

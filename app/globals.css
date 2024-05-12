@@ -172,6 +172,9 @@
 .xl-padding-adress {
   padding-bottom: 20px;
 }
+.xl-buttontext {
+  font-size: 14px;
+}
 }
 
 @media (max-width: 600px) {
@@ -285,6 +288,9 @@
   }
   .xs-padding-adress {
     padding-bottom: 20px;
+  }
+  .xs-buttontext {
+    font-size: 12px;
   }
 }
 
