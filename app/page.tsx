@@ -43,7 +43,7 @@ export default function Home() {
       }, 500)
     }, 6000)
     return () => clearInterval(interval)
-  }, [])
+  }, [images.length])
 
   useEffect(() => {
     const savedDarkMode = localStorage.getItem("darkMode") === "true"

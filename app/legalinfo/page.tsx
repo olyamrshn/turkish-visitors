@@ -2,12 +2,23 @@
 import { useState, useEffect } from "react"
 import { Header } from "../../components/Header"
 import Footer from "../../components/Footer"
-import { CopyIcon } from "@/public/svg/copy"
+import { CopyIcon, CopiedIcon } from "@/public/svg/copy"
 import Link from "next/link"
 import { ArrowLeft, ArrowRight } from "@/public/svg/arrows"
 
 export default function LegalInfo() {
+  interface CopiedState {
+    [key: string]: boolean
+  }
+
   const [darkMode, setDarkMode] = useState(false)
+  const [copied, setCopied] = useState<CopiedState>({})
+
+  const handleCopy = (iban: string) => {
+    navigator.clipboard.writeText(iban)
+    setCopied((prev) => ({ ...prev, [iban]: true }))
+    setTimeout(() => setCopied((prev) => ({ ...prev, [iban]: false })), 2000)
+  }
 
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode
@@ -21,10 +32,6 @@ export default function LegalInfo() {
     setDarkMode(savedDarkMode)
     document.body.classList.toggle("dark-theme", savedDarkMode)
   }, [])
-
-  const copyToClipboard = (iban: string) => {
-    navigator.clipboard.writeText(iban)
-  }
 
   return (
     <div
@@ -110,11 +117,13 @@ export default function LegalInfo() {
                   <strong>TL:</strong>TR970020500009887562800001
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
-                    onClick={() =>
-                      copyToClipboard("TR970020500009887562800001")
-                    }
+                    onClick={() => handleCopy("TR970020500009887562800001")}
                   >
-                    <CopyIcon />
+                    {copied["TR970020500009887562800001"] ? (
+                      <CopiedIcon />
+                    ) : (
+                      <CopyIcon />
+                    )}
                   </button>
                 </div>
               </div>
@@ -123,24 +132,28 @@ export default function LegalInfo() {
                   <b>USD: </b>TR160020500009887562800101
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
-                    onClick={() =>
-                      copyToClipboard("TR160020500009887562800101")
-                    }
+                    onClick={() => handleCopy("TR160020500009887562800101")}
                   >
-                    <CopyIcon />
+                    {copied["TR160020500009887562800101"] ? (
+                      <CopiedIcon />
+                    ) : (
+                      <CopyIcon />
+                    )}
                   </button>
                 </div>
               </div>
               <div className="xs-legal-direction">
                 <div className="xs-iban-text xl-iban-text">
-                  <strong>EUR: </strong> TR860020500009887562800102
+                  <strong>EUR: </strong>TR860020500009887562800102
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
-                    onClick={() =>
-                      copyToClipboard("TR860020500009887562800102")
-                    }
+                    onClick={() => handleCopy("TR860020500009887562800102")}
                   >
-                    <CopyIcon />
+                    {copied["TR860020500009887562800102"] ? (
+                      <CopiedIcon />
+                    ) : (
+                      <CopyIcon />
+                    )}
                   </button>
                 </div>
               </div>
@@ -149,11 +162,13 @@ export default function LegalInfo() {
                   <strong>RU: </strong> TR590020500009887562800103
                   <button
                     className="xs-copy xl-copy hover:cursor-copy hover:opacity-50"
-                    onClick={() =>
-                      copyToClipboard("TR590020500009887562800103")
-                    }
+                    onClick={() => handleCopy("TR590020500009887562800103")}
                   >
-                    <CopyIcon />
+                    {copied["TR590020500009887562800103"] ? (
+                      <CopiedIcon />
+                    ) : (
+                      <CopyIcon />
+                    )}
                   </button>
                 </div>
               </div>
