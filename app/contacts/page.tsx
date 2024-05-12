@@ -83,7 +83,7 @@ export default function Contacts() {
               rel="noopener noreferrer"
               className="flex items-center hover-opacity"
             >
-              <p className="xs:text-lg xl:text-xl">
+              <p className="xs-padding-adress xl-padding-adress">
                 AntPlato Business Center Halkalı Merkez <br />
                 Dereboyu Cd. No:4, 34303, <br />
                 Küçükçekmece/İstanbul, Türkiye
