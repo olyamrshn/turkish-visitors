@@ -59,16 +59,13 @@ export default function About() {
               consumer goods.
             </p>
           </div>
-
           <div className="flex flex-col items-center text-center justify-center pb-5 fadeIn div1">
-            <TruckIcon className="xs-icon-about xl-icon-about" />
+            <TruckIcon className="xs-icon-about xl-icon-about slide-right" />
             <p className="xs:text-base xl:text-xl">
-              {" "}
               We aim to deliver high-quality products and services, ensuring
               efficiency and reliability in every transaction.
             </p>
           </div>
-
           <div className="flex flex-col items-center text-center justify-center pb-5 fadeIn div2">
             <GivingIcon className="xs-icon-about xl-icon-about" />
             <p className="xs:text-base xl:text-xl">

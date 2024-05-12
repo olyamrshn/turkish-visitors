@@ -317,3 +317,15 @@ body {
 .div2 { animation-delay: 2s; }
 .div3 { animation-delay: 3s; }
 
+@keyframes slideRight {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-right {
+  animation: slideRight 3s ease-out forwards;
+}
