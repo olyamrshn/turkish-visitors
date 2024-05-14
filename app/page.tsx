@@ -22,9 +22,9 @@ export default function Home() {
   const [opacity, setOpacity] = useState(1)
 
   const images = [
-    "https://images.omrshn.dev/bluetopcontaginers.jpeg",
-    "https://images.omrshn.dev/bluelogisfticcars.jpeg",
-    "https://images.omrshn.dev/bluenewseagulls.jpg",
+    "https://images.omrshn.dev/adl1.jpeg",
+    "https://images.omrshn.dev/adl2.jpg",
+    "https://images.omrshn.dev/adl3.jpeg",
   ]
 
   const toggleDarkMode = () => {
