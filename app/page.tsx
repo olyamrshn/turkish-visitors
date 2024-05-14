@@ -39,8 +39,7 @@ export default function Home() {
       setOpacity(0)
       setTimeout(() => {
         setImageIndex((prevIndex) => (prevIndex + 1) % images.length)
-        setOpacity(1)
-      }, 500)
+      }, 100)
     }, 6000)
     return () => clearInterval(interval)
   }, [images.length])
@@ -114,7 +113,7 @@ export default function Home() {
             <Link
               key={index}
               href={link.href}
-              className="mb-2 group rounded-2xl border-gray-200 border-1 px-4 pt-2 pb-20 flex flex-col justify-start xs-always-blue
+              className="mb-2 group rounded-2xl px-4 pt-2 pb-20 flex flex-col justify-start xs-always-blue
             hover:bg-custom-blue hover:border-darker-blue
             dark:hover:bg-white dark:hover:border-white"
             >
@@ -141,6 +140,7 @@ export default function Home() {
             transition: "opacity 0.5s ease-in-out",
             objectFit: "fill",
           }}
+          onLoad={() => setOpacity(1)}
           className="xs-image-ship xl-image-ship"
         />
       </main>
