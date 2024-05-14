@@ -39,7 +39,7 @@ export default function Home() {
       setOpacity(0)
       setTimeout(() => {
         setImageIndex((prevIndex) => (prevIndex + 1) % images.length)
-      }, 100)
+      }, 300)
     }, 6000)
     return () => clearInterval(interval)
   }, [images.length])
