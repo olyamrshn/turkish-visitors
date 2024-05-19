@@ -1,6 +1,9 @@
+import { translate } from "../utils/translate"
+import { useLanguage } from "../contexts/LanguageContext"
 import { Logo } from "../public/svg/logo"
 
 const Footer = () => {
+  const { language } = useLanguage()
   return (
     <footer
       className="xs-footer xl-footer text-xs bg-blue-200 py-4 xs-footer-leftpadding xl-footer-leftpadding"
@@ -8,10 +11,12 @@ const Footer = () => {
     >
       <div className="flex flex-row items-center space-x-">
         <Logo className="xs-footer-logo xl-footer-logo" />
-        <p style={{ color: "white", paddingLeft: "2px" }}>Logistic Company</p>
+        <p style={{ color: "white", paddingLeft: "2px" }}>
+          {translate("footerLogo", language)}
+        </p>
       </div>
 
-      <p style={{ color: "white" }}>© 2024 ADL. All rights reserved.</p>
+      <p style={{ color: "white" }}>{translate("footerRights", language)}</p>
     </footer>
   )
 }

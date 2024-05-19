@@ -1,10 +1,11 @@
 "use client"
 import { useState, useEffect } from "react"
+import { translate } from "../../utils/translate"
+import { useLanguage } from "../../contexts/LanguageContext"
 import { Header } from "../../components/Header"
 import Footer from "../../components/Footer"
 import { Ship } from "../../public/svg/ship"
-import Link from "next/link"
-import { ArrowLeft, ArrowRight } from "@/public/svg/arrows"
+
 import {
   CallIcon,
   TimerIcon,
@@ -13,6 +14,7 @@ import {
 } from "@/public/svg/contacts-group"
 
 export default function Contacts() {
+  const { language } = useLanguage()
   const [darkMode, setDarkMode] = useState(false)
 
   const toggleDarkMode = () => {
@@ -42,14 +44,16 @@ export default function Contacts() {
       <main className="theme-text-color main-content flex flex-col items-center px-5">
         <Ship />
         <div className="flex flex-row pt-5 justify-center items-center">
-          <h2 className="xs-heading-pages font-bold text-3xl text-center pr-2">
-            Contact Us
+          <h2 className="xs-heading-pages font-bold text-3xl text-center">
+            {translate("contactsTitle", language)}
           </h2>
         </div>
         <div className="xs-description-pages py-4 w-full max-w-4xl text-center justify-center items-center">
           <div className=" flex flex-row justify-center items-center space-x-2 text-center py-3">
             <CallIcon className="w-5 h-5" />
-            <p className="font-normal xs:text-lg xl:text-xl">Phone:</p>
+            <p className="font-normal xs:text-lg xl:text-xl">
+              {translate("phone", language)}:
+            </p>
             <span className="font-normal xs:text-lg xl:text-xl">
               <a href="tel:+905013589608" className="hover-opacity">
                 +90 (501) 358-96-08
@@ -59,7 +63,9 @@ export default function Contacts() {
 
           <div className="flex flex-row justify-center items-center space-x-2 text-center py-3">
             <MailIcon className="w-5 h-5" />
-            <p className="font-normal xs:text-lg xl:text-xl">E-mail:</p>
+            <p className="font-normal xs:text-lg xl:text-xl">
+              {translate("email", language)}:
+            </p>
             <span className="font-normal xs:text-lg xl:text-xl">
               <a href="mailto:info@adl.group" className="hover-opacity">
                 info@adl.group
@@ -69,9 +75,13 @@ export default function Contacts() {
 
           <div className="py-3 font-normal items-center justify-center xs:text-lg xl:text-xl flex flex-col">
             <TimerIcon className="w-5 h-5" />
-            Work Hours:
-            <div className="font-normal">Mon-Fri — 10:00-18:00</div>
-            <div className="font-normal">Sat-Sun — Closed</div>
+            {translate("contactsHours", language)}
+            <div className="font-normal">
+              {translate("contactsOpen", language)}
+            </div>
+            <div className="font-normal">
+              {translate("contactsClosed", language)}
+            </div>
           </div>
 
           <div className="xs-description-pages text-center flex flex-col justify-center items-center">
@@ -91,18 +101,6 @@ export default function Contacts() {
               </p>
             </a>
           </div>
-        </div>
-        <div
-          style={{ margin: "0 auto", marginTop: "40px", marginBottom: "40px" }}
-        >
-          <Link href="/legalinfo">
-            <button className="hover:shadow  theme-text-color flex flex-row items-center text-center justify-center border px-2 py-1 rounded-full">
-              <p className="xs-buttontext xl-buttontext pl-3 pr-2">
-                Legal Info
-              </p>
-              <ArrowRight className="w-10 h-10 theme-text-color mt-1" />
-            </button>
-          </Link>
         </div>
       </main>
       <Footer />

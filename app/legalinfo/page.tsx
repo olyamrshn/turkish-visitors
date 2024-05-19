@@ -1,16 +1,17 @@
 "use client"
 import { useState, useEffect } from "react"
+import { translate } from "../../utils/translate"
+import { useLanguage } from "../../contexts/LanguageContext"
 import { Header } from "../../components/Header"
 import Footer from "../../components/Footer"
 import { CopyIcon, CopiedIcon } from "@/public/svg/copy"
-import Link from "next/link"
-import { ArrowLeft, ArrowRight } from "@/public/svg/arrows"
 
 export default function LegalInfo() {
   interface CopiedState {
     [key: string]: boolean
   }
 
+  const { language } = useLanguage()
   const [darkMode, setDarkMode] = useState(false)
   const [copied, setCopied] = useState<CopiedState>({})
 
@@ -46,7 +47,7 @@ export default function LegalInfo() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main className="main-content flex flex-col px-5 pb-10 xs:space-x-0 xl:space-x-20">
         <h1 className="xs-heading-pages theme-text-color font-bold text-3xl items-center text-center">
-          Legal Information
+          {translate("legalTitle", language)}
         </h1>
         <div
           style={{
@@ -58,30 +59,30 @@ export default function LegalInfo() {
         >
           <div className="xs-text-al xl-text-al">
             <h2 className="xs-leg-sec-heading xl-leg-sec-heading font-semibold pb-5">
-              Corporate Profile
+              {translate("legalProfile", language)}
             </h2>
             <p className="mb-2">
               <strong>TIN:</strong> 81863815
             </p>
             <p className="mb-2">
-              <strong>Legal address:</strong>
+              <strong>{translate("legalAddress", language)}:</strong>
             </p>
             <p className="mb-2">
               Halkalı Merkez Mahallesi, <br />
               Dereboyu Caddesi No: 4
             </p>
             <p className="mb-2">
-              <strong>Inner Door No:</strong>
+              <strong>{translate("legalInner", language)}:</strong>
             </p>
             <p className="mb-2">149 Küçükçekmece / İstanbul</p>
             <p className="mb-2">
-              <strong>Phone:</strong>{" "}
+              <strong> {translate("phone", language)}:</strong>{" "}
               <a href="tel:+905013589608" className="hover-opacity">
                 +90 (501) 358-96-08
               </a>
             </p>
             <p className="mb-2">
-              <strong>Email:</strong>{" "}
+              <strong> {translate("email", language)}:</strong>{" "}
               <a href="mailto:info@adl.group" className="hover-opacity">
                 info@adl.group
               </a>
@@ -92,25 +93,26 @@ export default function LegalInfo() {
           </div>
           <div className="xs-text-al xl-text-al">
             <h2 className="xs-leg-sec-heading xl-leg-sec-heading font-semibold pb-5">
-              Banking Connections
+              {translate("legalBanking", language)}
             </h2>
             <p className="mb-2">
-              <strong>Bank:</strong> Kuveyt Türk Katılım Bankası A.Ş.
+              <strong>{translate("bank", language)}:</strong> Kuveyt Türk
+              Katılım Bankası A.Ş.
             </p>
             <p className="mb-2">
-              <strong>Bank branch information:</strong>
+              <strong>{translate("bankBranch", language)}:</strong>
               <br />
               Kartaltepe Mah. Halkalı
               <br />
               Cad. No:78 Sefaköy Küçükçekmece / Istanbul
             </p>
             <p className="mb-2">
-              <strong>Bank branch code:</strong> 225
+              <strong>{translate("bankCode", language)}:</strong> 225
             </p>
 
             <div className="flex flex-col">
               <h3 className="font-bold py-2 xs-text-iban xl-text-iban">
-                IBAN for transfers
+                {translate("ibanTransfers", language)}:
               </h3>
               <div className="xs-legal-direction">
                 <div className="xs-iban-text xl-iban-text">
@@ -174,21 +176,9 @@ export default function LegalInfo() {
               </div>
             </div>
             <p>
-              <strong>SWIFT code:</strong> KTEFTRIS
+              <strong>{translate("swiftCode", language)}:</strong> KTEFTRIS
             </p>
           </div>
-        </div>
-        <div
-          style={{ margin: "0 auto", marginTop: "40px", marginBottom: "40px" }}
-        >
-          <Link href="/">
-            <button className="hover:shadow theme-text-color flex flex-row items-center text-center justify-center border px-2 py-1 rounded-full">
-              <p className="xs-buttontext xl-buttontext pl-3 pr-2">
-                Back to Homepage
-              </p>
-              <ArrowRight className="mt-1 w-10 h-10 theme-text-color" />
-            </button>
-          </Link>
         </div>
       </main>
       <Footer />

@@ -8,6 +8,8 @@ import { GlobeIcon } from "../public/svg/globe"
 import { InfoIcon } from "../public/svg/info"
 import Footer from "../components/Footer"
 import Image from "next/image"
+import { translate } from "../utils/translate"
+import { useLanguage } from "../contexts/LanguageContext"
 
 const Header = dynamic(
   () => import("../components/Header").then((mod) => mod.Header),
@@ -17,6 +19,7 @@ const Header = dynamic(
 )
 
 export default function Home() {
+  const { language } = useLanguage()
   const [darkMode, setDarkMode] = useState(false)
   const [imageIndex, setImageIndex] = useState(0)
   const [opacity, setOpacity] = useState(1)
@@ -53,8 +56,8 @@ export default function Home() {
   const links = [
     {
       href: "/about",
-      text: "Learn More",
-      description: "Get to know the experts driving your goods forward",
+      text: translate("learnMore", language),
+      description: translate("learnMoreDescription", language),
       icon: (
         <GlobeIcon
           className="icon icon-xs-white"
@@ -64,8 +67,8 @@ export default function Home() {
     },
     {
       href: "/contacts",
-      text: "Contacts",
-      description: "Get in Touch with Us",
+      text: translate("contactUs", language),
+      description: translate("contactUsDescription", language),
       icon: (
         <ContactIcon
           className="icon icon-xs-white"
@@ -75,8 +78,8 @@ export default function Home() {
     },
     {
       href: "/legalinfo",
-      text: "Legal Info",
-      description: "Corporate Details & Financial Information",
+      text: translate("legalInfo", language),
+      description: translate("legalInfoDescription", language),
       icon: (
         <InfoIcon
           className="icon icon-xs-white"
@@ -102,11 +105,11 @@ export default function Home() {
         showMainLink={true}
       />
       <main className="theme-text-color main-content flex flex-col items-center">
-        <h1 className="theme-text-color xs-who xl-who">Who We Are</h1>
+        <h1 className="theme-text-color xs-who xl-who">
+          {translate("homeTitle", language)}
+        </h1>
         <h2 className="text-center mx-auto mt-5 xs:text-lg xl:text-xl font-normal space-y-4 text-content">
-          ADL is a company based in Turkey, specializing in international trade.
-          We engage in importing and exporting various goods for clients in
-          Turkey and beyond.
+          {translate("homeDescription", language)}
         </h2>
         <div className="py-5 grid text-center xs:grid-rows-3 xs:max-w-1 xl:mb-0 xl:w-full xl:max-w-5xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl:pb-5">
           {links.map((link, index) => (

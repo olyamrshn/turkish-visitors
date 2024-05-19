@@ -1,0 +1,147 @@
+{
+  "language": {
+    "EN": "TR",
+    "TR": "EN"
+  },
+  "phone": {
+    "EN": "Phone",
+    "TR": "Telefon"
+  },
+  "email": {
+    "EN": "Email",
+    "TR": "E-posta"
+  },
+  "logoFirst": {
+    "EN": "International Trade",
+    "TR": "Uluslararası Ticaret"
+  },
+  "logoSecond": {
+    "EN": "& Communication",
+    "TR": "ve İletişim"
+  },
+
+  "footerLogo": {
+    "EN": "Logistic Company",
+    "TR": "Lojistik Şirketi"
+  },
+  "footerRights": {
+    "EN": "© 2024 ADL. All rights reserved.",
+    "TR": "© 2024 ADL. Tüm hakları saklıdır."
+  },
+
+  "homeTitle": {
+    "EN": "Who We Are",
+    "TR": "Kim Biziz"
+  },
+  "homeDescription": {
+    "EN": "ADL is a company based in Turkey, specializing in international trade. We engage in importing and exporting various goods for clients in Turkey and beyond.",
+    "TR": "ADL, Türkiye merkezli bir şirket olup, uluslararası ticarette uzmanlaşmıştır. Türkiye ve ötesindeki müşteriler için çeşitli malların ithalat ve ihracatını gerçekleştirmekteyiz."
+  },
+  "learnMore": {
+    "EN": "Learn More",
+    "TR": "Hakkımızda"
+  },
+  "learnMoreDescription": {
+    "EN": "Get to know the experts driving your goods forward",
+    "TR": "Mallarınızı ileriye taşıyan uzmanları tanıyın"
+  },
+  "contactUs": {
+    "EN": "Contact Us",
+    "TR": "İletişim"
+  },
+  "contactUsDescription": {
+    "EN": " Get in Touch with Us",
+    "TR": "Bizimle İletişime Geçin"
+  },
+  "legalInfo": {
+    "EN": "Legal Information",
+    "TR": "Yasal Bilgi"
+  },
+  "legalInfoDescription": {
+    "EN": "Corporate Details & Financial Information",
+    "TR": "Kurumsal Detaylar ve Mali Bilgiler"
+  },
+
+  "aboutTitle": {
+    "EN": "About ADL",
+    "TR": "ADL Hakkında"
+  },
+  "about1": {
+    "EN": "Our company collaborates with partners from European and North American countries, catering to their needs with a wide range of products, including specialized machinery, equipment, automotive and heavy machinery parts, oil, textiles, food products, and consumer goods.",
+    "TR": "Şirketimiz, Avrupa ve Kuzey Amerika ülkelerinden ortaklarla işbirliği yapmakta olup, ihtiyaçlarına geniş bir ürün yelpazesi ile hitap etmektedir. Bu ürünler arasında özel makineler, ekipmanlar, otomotiv ve ağır makine parçaları, yağ, tekstil, gıda ürünleri ve tüketim malları bulunmaktadır."
+  },
+  "about2": {
+    "EN": "We aim to deliver high-quality products and services, ensuring efficiency and reliability in every transaction.",
+    "TR": "Yüksek kaliteli ürünler ve hizmetler sunmayı amaçlıyoruz, her işlemde verimlilik ve güvenilirliği sağlıyoruz."
+  },
+  "about3": {
+    "EN": "Our team consists of experienced professionals ready to provide clients with quality solutions for their businesses. ADL is ready to partner with companies of all sizes, offering a professional approach and personalized service to each client.",
+    "TR": "Ekibimiz, müşterilere iş çözümleri sunmaya hazır deneyimli profesyonellerden oluşmaktadır. ADL, her müşteriye profesyonel yaklaşım ve kişiselleştirilmiş hizmet sunarak her büyüklükteki şirketlerle ortak olmaya hazırdır."
+  },
+  "about4": {
+    "EN": "Choose ADL for your next trade deal and secure a reliable partner in international trade for your business. Our head office is based at",
+    "TR": "Bir sonraki ticaret anlaşmanızda ADL'yi tercih edin ve işiniz için uluslararası ticarette güvenilir bir ortak edinin. Merkez ofisimiz"
+  },
+  "aboutLinkAddress": {
+    "EN": "Ant Plato İŞ Merkezi (Küçükçekmece/Istanbul)",
+    "TR": "Ant Plato İŞ Merkezi (Küçükçekmece/İstanbul) adresinde bulunmaktadır."
+  },
+
+  "contactsTitle": {
+    "EN": "Contact Us",
+    "TR": "İletişim"
+  },
+  "contactsHours": {
+    "EN": "Working Hours",
+    "TR": "Çalışma Saatleri"
+  },
+  "contactsOpen": {
+    "EN": "Mon-Fri — 10:00-18:00",
+    "TR": "Pazartesi-Cuma — 10:00-18:00"
+  },
+  "contactsClosed": {
+    "EN": "Sat-Sun — Closed",
+    "TR": "Cumartesi-Pazar — Kapalı"
+  },
+
+  "legalTitle": {
+    "EN": "Legal Information",
+    "TR": "Yasal Bilgi"
+  },
+  "legalProfile": {
+    "EN": "Corporate Profile",
+    "TR": "Kurumsal Profil"
+  },
+  "legalBanking": {
+    "EN": "Banking Connections",
+    "TR": "Banka Bağlantıları"
+  },
+  "legalAddress": {
+    "EN": "Legal address",
+    "TR": "Yasal Adres"
+  },
+  "legalInner": {
+    "EN": "Inner Door No ",
+    "TR": "Dahili Kapı No"
+  },
+  "bank": {
+    "EN": "Bank",
+    "TR": "Banka"
+  },
+  "bankBranch": {
+    "EN": "Bank branch information",
+    "TR": "Banka Şubesi Bilgileri"
+  },
+  "bankCode": {
+    "EN": "Bank branch code",
+    "TR": "Banka Şube Kodu"
+  },
+  "ibanTransfers": {
+    "EN": "IBAN for transfers",
+    "TR": "Ödemeler için IBAN"
+  },
+  "swiftCode": {
+    "EN": "SWIFT code",
+    "TR": "SWIFT Kodu"
+  }
+}
