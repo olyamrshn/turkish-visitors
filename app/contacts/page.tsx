@@ -41,7 +41,7 @@ export default function Contacts() {
       }}
     >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="theme-text-color main-content flex flex-col items-center px-5">
+      <main className="theme-text-color main-content flex flex-col items-center px-5 pt-[1rem]">
         <Ship />
         <div className="flex flex-row pt-5 justify-center items-center">
           <h2 className="xs-heading-pages font-bold text-3xl text-center">
@@ -95,7 +95,7 @@ export default function Contacts() {
               className="flex items-center hover-opacity"
             >
               <p className="xs-padding-adress xl-padding-adress">
-                AntPlato Business Center Halkalı Merkez <br />
+                {translate("contactsAntPlato", language)} <br />
                 Dereboyu Cd. No:4, 34303, <br />
                 Küçükçekmece/İstanbul, Türkiye
               </p>

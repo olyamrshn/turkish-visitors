@@ -9,7 +9,7 @@ const Footer = () => {
       className="xs-footer xl-footer text-xs bg-blue-200 py-4 xs-footer-leftpadding xl-footer-leftpadding"
       style={{ backgroundColor: "rgb(63 90 181)" }}
     >
-      <div className="flex flex-row items-center space-x-">
+      <div className="flex flex-row items-center">
         <Logo className="xs-footer-logo xl-footer-logo" />
         <p style={{ color: "white", paddingLeft: "2px" }}>
           {translate("footerLogo", language)}

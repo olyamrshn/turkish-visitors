@@ -111,14 +111,13 @@ export default function Home() {
         <h2 className="text-center mx-auto mt-5 xs:text-lg xl:text-xl font-normal space-y-4 text-content">
           {translate("homeDescription", language)}
         </h2>
-        <div className="py-5 grid text-center xs:grid-rows-3 xs:max-w-1 xl:mb-0 xl:w-full xl:max-w-5xl xl:grid-cols-3 xl:grid-rows-1 xl:text-left xl:pb-5">
+        <div className="py-5 grid text-center xs:grid-rows-3 xs:max-w-1 xl:mb-0 xl:w-full xl:max-w-5xl xl:grid-cols-3 xl:gap-2 xl:grid-rows-1 xl:text-left xl:pb-5">
           {links.map((link, index) => (
             <Link
               key={index}
               href={link.href}
-              className="mb-2 group rounded-2xl px-4 pt-2 pb-20 flex flex-col justify-start xs-always-blue
-            hover:bg-custom-blue hover:border-darker-blue
-            dark:hover:bg-white dark:hover:border-white"
+              className="mb-2 group rounded-2xl px-4 pt-2 pb-20 flex flex-col justify-start
+              xs-cards xl-cards"
             >
               <h2 className="xs-heading link-item mb-3 text-3xl font-semibold flex items-center">
                 <span className="icon pr-2 icon-xs-white">{link.icon}</span>

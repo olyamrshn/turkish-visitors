@@ -51,7 +51,6 @@ export default function LegalInfo() {
         </h1>
         <div
           style={{
-            textAlign: "center",
             marginLeft: "auto",
             marginRight: "auto",
           }}

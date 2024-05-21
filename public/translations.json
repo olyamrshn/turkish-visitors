@@ -31,11 +31,11 @@
 
   "homeTitle": {
     "EN": "Who We Are",
-    "TR": "Kim Biziz"
+    "TR": "Biz Kimiz"
   },
   "homeDescription": {
     "EN": "ADL is a company based in Turkey, specializing in international trade. We engage in importing and exporting various goods for clients in Turkey and beyond.",
-    "TR": "ADL, Türkiye merkezli bir şirket olup, uluslararası ticarette uzmanlaşmıştır. Türkiye ve ötesindeki müşteriler için çeşitli malların ithalat ve ihracatını gerçekleştirmekteyiz."
+    "TR": "ADL, Türkiye'de faaliyet gösteren uluslararası ticaret konusunda uzmanlaşmış bir şirkettir. ADL, Türkiye ve yurt dışındaki müşteriler için çeşitli ürünlerin ithalat ve ihracatını gerçekleştirmektedir."
   },
   "learnMore": {
     "EN": "Learn More",
@@ -43,7 +43,7 @@
   },
   "learnMoreDescription": {
     "EN": "Get to know the experts driving your goods forward",
-    "TR": "Mallarınızı ileriye taşıyan uzmanları tanıyın"
+    "TR": "Detaylı bilgi almak için tıklayınız"
   },
   "contactUs": {
     "EN": "Contact Us",
@@ -51,7 +51,7 @@
   },
   "contactUsDescription": {
     "EN": " Get in Touch with Us",
-    "TR": "Bizimle İletişime Geçin"
+    "TR": "Bizimle iletişime geçiniz"
   },
   "legalInfo": {
     "EN": "Legal Info",
@@ -59,7 +59,7 @@
   },
   "legalInfoDescription": {
     "EN": "Corporate Details & Financial Information",
-    "TR": "Kurumsal Detaylar ve Mali Bilgiler"
+    "TR": "Kurumsal bilgiler için tıklayınız"
   },
 
   "aboutTitle": {
@@ -68,23 +68,23 @@
   },
   "about1": {
     "EN": "Our company collaborates with partners from European and North American countries, catering to their needs with a wide range of products, including specialized machinery, equipment, automotive and heavy machinery parts, oil, textiles, food products, and consumer goods.",
-    "TR": "Şirketimiz, Avrupa ve Kuzey Amerika ülkelerinden ortaklarla işbirliği yapmakta olup, ihtiyaçlarına geniş bir ürün yelpazesi ile hitap etmektedir. Bu ürünler arasında özel makineler, ekipmanlar, otomotiv ve ağır makine parçaları, yağ, tekstil, gıda ürünleri ve tüketim malları bulunmaktadır."
+    "TR": "Şirketimiz, Avrupa ve Kuzey Amerika ülkelerindeki ortaklarla işbirliği yaparak özel makineler, ekipmanlar, otomotiv ve ağır makine parçaları, petrol, tekstil, gıda ve tüketim ürünleri dahil olmak üzere geniş ürün yelpazesi sunarak her konuda yardımcı olmaktadır."
   },
   "about2": {
     "EN": "We aim to deliver high-quality products and services, ensuring efficiency and reliability in every transaction.",
-    "TR": "Yüksek kaliteli ürünler ve hizmetler sunmayı amaçlıyoruz, her işlemde verimlilik ve güvenilirliği sağlıyoruz."
+    "TR": "Amacımız her işlemde verimlilik ve güvenilirlik sağlayarak yüksek kaliteli ürünler ve hizmetler sunmaktır."
   },
   "about3": {
     "EN": "Our team consists of experienced professionals ready to provide clients with quality solutions for their businesses. ADL is ready to partner with companies of all sizes, offering a professional approach and personalized service to each client.",
-    "TR": "Ekibimiz, müşterilere iş çözümleri sunmaya hazır deneyimli profesyonellerden oluşmaktadır. ADL, her müşteriye profesyonel yaklaşım ve kişiselleştirilmiş hizmet sunarak her büyüklükteki şirketlerle ortak olmaya hazırdır."
+    "TR": "Uzman kadromuz deneyimli profesyonellerden oluşmaktadır ve müşterilerimize en iyi çözümleri sunarak her konuda destek olmaktadır. ADL, her müşteriye profesyonel bir yaklaşım ve kişiselleştirilmiş hizmet sunarak her büyüklükteki şirket ile ortaklaşmaya açıktır."
   },
   "about4": {
     "EN": "Choose ADL for your next trade deal and secure a reliable partner in international trade for your business. Our head office is based at",
-    "TR": "Bir sonraki ticaret anlaşmanızda ADL'yi tercih edin ve işiniz için uluslararası ticarette güvenilir bir ortak edinin. Merkez ofisimiz"
+    "TR": "Bir sonraki anlaşmanız için ADL şirketini seçerek işletmeniz için uluslararası ticarette güvenilir bir ortak edinebilrsiniz. Merkez ofisimiz"
   },
   "aboutLinkAddress": {
     "EN": "Ant Plato İŞ Merkezi (Küçükçekmece/Istanbul)",
-    "TR": "Ant Plato İŞ Merkezi (Küçükçekmece/İstanbul) adresinde bulunmaktadır."
+    "TR": "AntPlato İş Merkezi'nde (Küçükçekmece/İstanbul) yer almaktadır."
   },
 
   "contactsTitle": {
@@ -103,6 +103,10 @@
     "EN": "Sat-Sun — Closed",
     "TR": "Cumartesi-Pazar — Kapalı"
   },
+  "contactsAntPlato": {
+    "EN": "AntPlato Business Center Halkalı Merkez",
+    "TR": "AntPlato İş Merkezi Halkalı Merkez"
+  },
 
   "legalTitle": {
     "EN": "Legal Information",
@@ -114,7 +118,7 @@
   },
   "legalBanking": {
     "EN": "Banking Connections",
-    "TR": "Banka Bağlantıları"
+    "TR": "Banka Bilgileri"
   },
   "legalAddress": {
     "EN": "Legal address",
@@ -122,7 +126,7 @@
   },
   "legalInner": {
     "EN": "Inner Door No ",
-    "TR": "Dahili Kapı No"
+    "TR": "İç Kapı No"
   },
   "bank": {
     "EN": "Bank",
@@ -130,15 +134,15 @@
   },
   "bankBranch": {
     "EN": "Bank branch information",
-    "TR": "Banka Şubesi Bilgileri"
+    "TR": "Banka Şubesi"
   },
   "bankCode": {
     "EN": "Bank branch code",
-    "TR": "Banka Şube Kodu"
+    "TR": "Banka şube kodu"
   },
   "ibanTransfers": {
     "EN": "IBAN for transfers",
-    "TR": "Ödemeler için IBAN"
+    "TR": "IBAN Bilgileri"
   },
   "swiftCode": {
     "EN": "SWIFT code",

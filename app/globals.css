@@ -59,6 +59,12 @@
   --svg-fill-color: 8, 40, 126;
   --svg-hover-color: 255, 255, 255;
   --header-bg-color: 123, 33, 16;
+  --card-bg-color: 211, 211, 211;
+
+  --card-hover-bg-color: 10, 33, 62;
+
+  --card-hover-border-color: 196, 218, 235;
+  --xs-bg-color: 84, 13, 4;
 }
 
 .dark-theme {
@@ -69,10 +75,12 @@
   --svg-fill-color: 255, 255, 255;
   --svg-hover-color: 255, 255, 255;
   --header-bg-color: 8, 37, 115;
-  .dark-theme .xs-always-blue {
-    background-color: #073098;
-    color: white;
-  }
+  --card-bg-color: 2, 13, 38;
+
+  --card-hover-bg-color: 24, 45, 106;
+
+  --card-hover-border-color: 254, 255, 0;
+  --xs-bg-color: 7, 48, 152;
 }
 
 @layer utilities {
@@ -82,6 +90,12 @@
 }
 
 @media (min-width: 601px) {
+  .xl-cards {
+    background-color: rgb(var(--card-bg-color));
+  }
+  .xl-cards:hover {
+    background-color: rgb(var(--card-hover-bg-color));
+  }
   .group:hover .arrow {
     fill: white;
   }
@@ -170,7 +184,7 @@
   padding-bottom: 30px;
 }
 .xl-padding-adress {
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 .xl-buttontext {
   font-size: 16px;
@@ -178,8 +192,8 @@
 }
 
 @media (max-width: 600px) {
-  .xs-always-blue {
-    background-color: #073098;
+  .xs-cards {
+    background-color: rgb(var(--xs-bg-color));
     color: white;
   }
   .icon-xs-white {
