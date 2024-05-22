@@ -51,6 +51,13 @@
   background-color:rgb(var(--header-bg-color));
 }
 
+.navigation-bg {
+  background-color: rgba(var(--navigation-bg));
+}
+.navigation-text {
+  color: rgb(var(--navigation-text));
+}
+
 :root {
   --theme-text: 8, 40, 126;
   --theme-text-hover: 255, 255, 255;
@@ -59,12 +66,14 @@
   --svg-fill-color: 8, 40, 126;
   --svg-hover-color: 255, 255, 255;
   --header-bg-color: 123, 33, 16;
+
   --card-bg-color: 210, 210, 216;
-
   --card-hover-bg-color: 10, 33, 62;
-
   --card-hover-border-color: 196, 218, 235;
   --xs-bg-color: 10, 33, 62;
+
+  --navigation-bg: 38, 95, 183;
+  --navigation-text: 255, 255, 255;
 }
 
 .dark-theme {
@@ -75,12 +84,14 @@
   --svg-fill-color: 255, 255, 255;
   --svg-hover-color: 255, 255, 255;
   --header-bg-color: 8, 37, 115;
+
   --card-bg-color: 2, 13, 38;
-
   --card-hover-bg-color: 24, 45, 106;
-
   --card-hover-border-color: 254, 255, 0;
   --xs-bg-color: 10, 37, 86;
+
+  --navigation-bg: 39, 57, 172;
+  --navigation-text: 255, 255, 255;
 }
 
 @layer utilities {
@@ -196,6 +207,15 @@
   gap: 1rem;
   padding-bottom: 20px;
   width: 100%;
+}
+.xl-navigation {
+  position: absolute;
+  width: 30%;
+  left: 70%;
+}
+.xs-nav-padding {
+  padding-top: 20px;
+
 }
 }
 
@@ -333,6 +353,18 @@
   .xs-buttontext {
     font-size: 15px;
   }
+  .xs-navigation {
+    position: absolute;
+    width: 80%;
+    left: 20%;
+    right: 0;
+    height: 100%;
+    min-height: 100vh;
+  }
+  .xs-nav-padding {
+    padding-top: 80px;
+
+  }
 }
 
 body {
@@ -345,7 +377,8 @@ body {
     rgb(var(--background-start-rgb));
     display: flex;
     flex-direction: column;
-    min-height: 70vh;
+    /* min-height: 70vh; */
+    height: 100%;
     margin: "auto";
 }
 

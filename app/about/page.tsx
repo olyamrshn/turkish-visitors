@@ -15,6 +15,7 @@ import Navigation from "../../components/Navigation"
 export default function About() {
   const { language } = useLanguage()
   const [darkMode, setDarkMode] = useState(false)
+  const [isNavOpen, setIsNavOpen] = useState(false)
 
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode
@@ -37,14 +38,28 @@ export default function About() {
         minHeight: "100vh",
         width: "100%",
         maxWidth: "100%",
+        position: "relative",
+        height: "100%",
       }}
     >
+      {isNavOpen && (
+        <div className="fixed inset-0 bg-black opacity-50 z-2"></div>
+      )}
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main className="main-content text-center flex flex-col px-5 py-15">
-        <div style={{ position: "relative", height: "10vh", width: "100%" }}>
-          <div style={{ position: "absolute", top: 0, right: 15, bottom: 10 }}>
-            <Navigation />
-          </div>
+        <div>
+          <button
+            className="font-bold theme-text-color"
+            onClick={() => setIsNavOpen(true)}
+          >
+            Navigation
+          </button>
+          {isNavOpen && (
+            <>
+              <div className="fixed inset-0 bg-black opacity-50 z-40"></div>
+              <Navigation onClose={() => setIsNavOpen(false)} />
+            </>
+          )}
         </div>
         <h1 className="xs-heading-pages theme-text-color font-bold text-3xl">
           {translate("aboutTitle", language)}
