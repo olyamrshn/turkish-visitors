@@ -213,13 +213,19 @@
   width: 20%;
   left: 80%;
 }
-.xs-nav-padding {
-  padding-top: 20px;
-
+.xl-text-align {
+  text-align: right;
+  padding-left: 20px;
 }
 }
 
 @media (max-width: 600px) {
+  .xs-nav-padding {
+    padding-top: 20px;
+  }
+  .xs-text-align {
+    text-align: left;
+  }
   .xs-grid-container {
     display: grid;
     grid-template-columns: 1fr;

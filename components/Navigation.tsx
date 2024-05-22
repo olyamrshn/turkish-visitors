@@ -15,7 +15,7 @@ export default function Navigation({ onClose }: { onClose: () => void }) {
 
   return (
     <div
-      className="text-left fixed inset-0 xl-navigation xs-navigation navigation-bg navigation-text"
+      className="xs-text-align xl-text-align fixed inset-0 xl-navigation xs-navigation navigation-bg navigation-text"
       style={{
         zIndex: 10000000,
         opacity: 1,
@@ -27,9 +27,6 @@ export default function Navigation({ onClose }: { onClose: () => void }) {
         boxShadow: "-2px 0 8px rgba(0,0,0,0.1)",
       }}
     >
-      {/* <button className="absolute top-5 right-5" onClick={onClose}>
-        <RiCloseLargeLine size={20} className="color-white" />
-      </button> */}
       <div className="absolute top-5 right-5 left-5 flex justify-between items-center">
         <NavLogo className="w-12 h-10" />
         <button onClick={onClose}>
