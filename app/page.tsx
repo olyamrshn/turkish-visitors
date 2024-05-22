@@ -103,7 +103,6 @@ export default function Home() {
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
         showMainLink={true}
-        isMainPage={true}
       />
       <main className="theme-text-color main-content flex flex-col items-center">
         <h1 className="theme-text-color xs-who xl-who">
