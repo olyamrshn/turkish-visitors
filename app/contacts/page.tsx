@@ -41,6 +41,7 @@ export default function Contacts() {
         minHeight: "100vh",
         width: "100%",
         maxWidth: "100%",
+        paddingBottom: "3rem",
       }}
     >
       {isNavOpen && (
