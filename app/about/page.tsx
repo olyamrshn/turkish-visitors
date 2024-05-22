@@ -42,9 +42,6 @@ export default function About() {
         height: "100%",
       }}
     >
-      {isNavOpen && (
-        <div className="fixed inset-0 bg-black opacity-50 z-2"></div>
-      )}
       <Header
         setIsNavOpen={setIsNavOpen}
         darkMode={darkMode}
@@ -53,12 +50,6 @@ export default function About() {
       />
       <main className="main-content text-center flex flex-col px-5 py-15">
         <div className="text-right">
-          {/* <button
-            className="font-bold theme-text-color"
-            onClick={() => setIsNavOpen(true)}
-          >
-            <SlMenu className="w-6 h-6" />
-          </button> */}
           {isNavOpen && (
             <>
               <div className="fixed inset-0 bg-black opacity-50 z-40"></div>

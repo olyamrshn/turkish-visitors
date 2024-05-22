@@ -10,6 +10,7 @@ import Footer from "../components/Footer"
 import Image from "next/image"
 import { translate } from "../utils/translate"
 import { useLanguage } from "../contexts/LanguageContext"
+import Navigation from "../components/Navigation"
 
 const Header = dynamic(
   () => import("../components/Header").then((mod) => mod.Header),
@@ -21,6 +22,7 @@ const Header = dynamic(
 export default function Home() {
   const { language } = useLanguage()
   const [darkMode, setDarkMode] = useState(false)
+  const [isNavOpen, setIsNavOpen] = useState(false)
   const [imageIndex, setImageIndex] = useState(0)
   const [opacity, setOpacity] = useState(1)
 
@@ -103,8 +105,17 @@ export default function Home() {
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
         showMainLink={true}
+        setIsNavOpen={setIsNavOpen}
       />
       <main className="theme-text-color main-content flex flex-col items-center">
+        <div className="text-right">
+          {isNavOpen && (
+            <>
+              <div className="fixed inset-0 bg-black opacity-50 z-40"></div>
+              <Navigation onClose={() => setIsNavOpen(false)} />
+            </>
+          )}
+        </div>
         <h1 className="theme-text-color xs-who xl-who">
           {translate("homeTitle", language)}
         </h1>

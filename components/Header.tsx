@@ -82,6 +82,12 @@ export const Header = ({
         {showMainLink ? (
           <>
             <button
+              className="font-bold text-white"
+              onClick={() => setIsNavOpen && setIsNavOpen(true)}
+            >
+              <SlMenu className="w-6 h-6" />
+            </button>
+            <button
               onClick={toggleLanguage}
               className="text-lg font-normal text-white"
             >
@@ -106,62 +112,3 @@ export const Header = ({
     </header>
   )
 }
-
-// export const Header = ({
-//   darkMode,
-//   toggleDarkMode,
-//   showMainLink,
-//   setIsNavOpen,
-// }: HeaderProps) => {
-//   const { language, setLanguage } = useLanguage()
-
-//   const toggleLanguage = () => {
-//     const newLanguage = language === "EN" ? "TR" : "EN"
-//     setLanguage(newLanguage)
-//     localStorage.setItem("language", newLanguage)
-//   }
-
-//   return (
-//     <header
-//       key={String(darkMode)}
-//       style={{
-//         color: "white",
-//         justifyContent: "space-between",
-//         display: "flex",
-//         flexDirection: "row",
-//         width: "100%",
-//         margin: "0 auto",
-//         maxHeight: "80px",
-//         alignItems: "center",
-//         marginBottom: "20px",
-//       }}
-//       className="px-5 pt-2 font-bold text-2xl header-bg-color text-left flex justify-between"
-//     >
-//       {showMainLink ? (
-//         <HeaderLink href="#" isMainLink={true} />
-//       ) : (
-//         <HeaderLink href="/" isMainLink={false} />
-//       )}
-//       <div className="flex flex-row gap-5 items-center">
-//         <button
-//           className="font-bold text-white"
-//           onClick={() => setIsNavOpen && setIsNavOpen(true)}
-//         >
-//           <SlMenu className="w-6 h-6" />
-//         </button>
-//         <button
-//           onClick={toggleLanguage}
-//           className="text-lg font-normal text-white"
-//         >
-//           {translate("language", language)}
-//         </button>
-//         <button className="relative" onClick={toggleDarkMode}>
-//           <Moon
-//             className="xs:w-7 xs:h-7 xl:w-9 xl:h-9"
-//             style={{ width: "28px", height: "28px" }}
-//           />
-//         </button>
-//       </div>
-//     </header>
-//   )
-// }
