@@ -1,10 +1,13 @@
 import { translate } from "../utils/translate"
 import { useLanguage } from "../contexts/LanguageContext"
-import { IoCloseOutline } from "react-icons/io5"
-import { HomeIcon } from "@/public/svg/navigation"
-import { NavGlobeIcon } from "../public/svg/navigation"
-import { NavContactIcon } from "../public/svg/navigation"
-import { NavInfoIcon } from "../public/svg/navigation"
+import { RiCloseLargeLine } from "react-icons/ri"
+import {
+  HomeIcon,
+  NavGlobeIcon,
+  NavContactIcon,
+  NavInfoIcon,
+  NavLogo,
+} from "@/public/svg/navigation"
 import Link from "next/link"
 
 export default function Navigation({ onClose }: { onClose: () => void }) {
@@ -12,7 +15,7 @@ export default function Navigation({ onClose }: { onClose: () => void }) {
 
   return (
     <div
-      className="fixed inset-0 xl-navigation xs-navigation navigation-bg navigation-text"
+      className="text-left fixed inset-0 xl-navigation xs-navigation navigation-bg navigation-text"
       style={{
         zIndex: 10000000,
         opacity: 1,
@@ -20,68 +23,67 @@ export default function Navigation({ onClose }: { onClose: () => void }) {
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-start",
-        paddingTop: "10%",
+        textAlign: "left",
+        boxShadow: "-2px 0 8px rgba(0,0,0,0.1)",
       }}
     >
-      <button
-        className="absolute top-10 right-10"
-        onClick={onClose}
-        onMouseEnter={(e) => (e.currentTarget.style.color = "#00008B")}
-        onMouseLeave={(e) => (e.currentTarget.style.color = "white")}
+      {/* <button className="absolute top-5 right-5" onClick={onClose}>
+        <RiCloseLargeLine size={20} className="color-white" />
+      </button> */}
+      <div className="absolute top-5 right-5 left-5 flex justify-between items-center">
+        <NavLogo className="w-12 h-10" />
+        <button onClick={onClose}>
+          <RiCloseLargeLine size={20} className="color-white" />
+        </button>
+      </div>
+      <div
+        style={{ marginTop: "100px" }}
+        className="flex flex-col items-left pl-10 h-full space-y-5"
       >
-        <IoCloseOutline size={20} className="color-white" />
-      </button>
-      <div className="flex flex-col items-center h-full space-y-5">
         <Link href="/">
-          <button
-            className="text-semibold text-xl flex flex-row items-center"
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#00008B")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "white")}
-          >
+          <button className="flex flex-row items-center">
             <HomeIcon
-              style={{ width: "26px", height: "26px" }}
               className="mr-2"
+              style={{ width: "26px", height: "26px" }}
             />
-            {translate("homepage", language)}
+            <p className="font-semibold text-xl">
+              {" "}
+              {translate("homepage", language)}
+            </p>
           </button>
         </Link>
         <Link href="/about">
-          <button
-            className="text-semibold text-l flex flex-row items-center"
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#00008B")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "white")}
-          >
+          <button className="text-sm flex flex-row items-center">
             <NavGlobeIcon
-              style={{ width: "26px", height: "26px" }}
               className="mr-2"
+              style={{ width: "26px", height: "26px" }}
             />
-            {translate("aboutTitle", language)}
+            <p className="font-semibold text-xl">
+              {translate("aboutTitle", language)} <br />
+            </p>
           </button>
         </Link>
         <Link href="/contacts">
-          <button
-            className="text-semibold text-l flex flex-row items-center"
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#00008B")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "white")}
-          >
+          <button className="text-sm flex flex-row items-center">
             <NavContactIcon
               style={{ width: "26px", height: "26px" }}
               className="mr-2"
             />
-            {translate("contactUs", language)}
+            <p className="font-semibold text-xl">
+              {translate("contactUs", language)} <br />
+            </p>
           </button>
         </Link>
         <Link href="/legalinfo">
-          <button
-            className="text-semibold text-l flex flex-row items-center"
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#00008B")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "white")}
-          >
+          <button className="text-sm flex flex-row items-center">
             <NavInfoIcon
               style={{ width: "26px", height: "26px" }}
               className="mr-2"
             />
-            {translate("legalInfo", language)}
+            <p className="font-semibold text-xl">
+              {" "}
+              {translate("legalInfo", language)}
+            </p>
           </button>
         </Link>
       </div>

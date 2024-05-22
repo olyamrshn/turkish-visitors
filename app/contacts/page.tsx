@@ -5,6 +5,8 @@ import { useLanguage } from "../../contexts/LanguageContext"
 import { Header } from "../../components/Header"
 import Footer from "../../components/Footer"
 import { Ship } from "../../public/svg/ship"
+import Navigation from "../../components/Navigation"
+import { SlMenu } from "react-icons/sl"
 
 import {
   CallIcon,
@@ -16,6 +18,7 @@ import {
 export default function Contacts() {
   const { language } = useLanguage()
   const [darkMode, setDarkMode] = useState(false)
+  const [isNavOpen, setIsNavOpen] = useState(false)
 
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode
@@ -40,9 +43,27 @@ export default function Contacts() {
         maxWidth: "100%",
       }}
     >
+      {isNavOpen && (
+        <div className="fixed inset-0 bg-black opacity-50 z-2"></div>
+      )}
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <div className="text-right pr-10">
+        <button
+          className="font-bold theme-text-color"
+          onClick={() => setIsNavOpen(true)}
+        >
+          <SlMenu className="w-6 h-6" />
+        </button>
+        {isNavOpen && (
+          <>
+            <div className="fixed inset-0 bg-black opacity-50 z-40"></div>
+            <Navigation onClose={() => setIsNavOpen(false)} />
+          </>
+        )}
+      </div>
       <main className="theme-text-color main-content flex flex-col items-center px-5 pt-[1rem]">
         <Ship />
+
         <div className="flex flex-row pt-5 justify-center items-center">
           <h2 className="xs-heading-pages font-bold text-3xl text-center">
             {translate("contactsTitle", language)}

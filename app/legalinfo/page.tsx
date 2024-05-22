@@ -5,6 +5,8 @@ import { useLanguage } from "../../contexts/LanguageContext"
 import { Header } from "../../components/Header"
 import Footer from "../../components/Footer"
 import { CopyIcon, CopiedIcon } from "@/public/svg/copy"
+import Navigation from "../../components/Navigation"
+import { SlMenu } from "react-icons/sl"
 
 export default function LegalInfo() {
   interface CopiedState {
@@ -14,6 +16,7 @@ export default function LegalInfo() {
   const { language } = useLanguage()
   const [darkMode, setDarkMode] = useState(false)
   const [copied, setCopied] = useState<CopiedState>({})
+  const [isNavOpen, setIsNavOpen] = useState(false)
 
   const handleCopy = (iban: string) => {
     navigator.clipboard.writeText(iban)
@@ -44,9 +47,26 @@ export default function LegalInfo() {
         maxWidth: "100%",
       }}
     >
+      {isNavOpen && (
+        <div className="fixed inset-0 bg-black opacity-50 z-2"></div>
+      )}
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="main-content flex flex-col px-5 pb-10 xs:space-x-0 xl:space-x-20">
-        <h1 className="xs-heading-pages theme-text-color font-bold text-3xl items-center text-center">
+      <div className="text-right pr-10">
+        <button
+          className="font-bold theme-text-color"
+          onClick={() => setIsNavOpen(true)}
+        >
+          <SlMenu className="w-6 h-6" />
+        </button>
+        {isNavOpen && (
+          <>
+            <div className="fixed inset-0 bg-black opacity-50 z-40"></div>
+            <Navigation onClose={() => setIsNavOpen(false)} />
+          </>
+        )}
+      </div>
+      <main className="main-content flex flex-col  pb-10 xs:space-x-0 xl:space-x-20">
+        <h1 className="pt-5 xs-heading-pages theme-text-color font-bold text-3xl items-center text-center">
           {translate("legalTitle", language)}
         </h1>
         <div
