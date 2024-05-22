@@ -11,7 +11,6 @@ import {
   PresentationIcon,
 } from "../../public/svg/about-group"
 import Navigation from "../../components/Navigation"
-import { SlMenu } from "react-icons/sl"
 
 export default function About() {
   const { language } = useLanguage()
@@ -46,15 +45,20 @@ export default function About() {
       {isNavOpen && (
         <div className="fixed inset-0 bg-black opacity-50 z-2"></div>
       )}
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Header
+        setIsNavOpen={setIsNavOpen}
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+        showMainLink={false}
+      />
       <main className="main-content text-center flex flex-col px-5 py-15">
         <div className="text-right">
-          <button
+          {/* <button
             className="font-bold theme-text-color"
             onClick={() => setIsNavOpen(true)}
           >
             <SlMenu className="w-6 h-6" />
-          </button>
+          </button> */}
           {isNavOpen && (
             <>
               <div className="fixed inset-0 bg-black opacity-50 z-40"></div>

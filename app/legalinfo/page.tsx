@@ -50,14 +50,19 @@ export default function LegalInfo() {
       {isNavOpen && (
         <div className="fixed inset-0 bg-black opacity-50 z-2"></div>
       )}
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Header
+        setIsNavOpen={setIsNavOpen}
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+        showMainLink={false}
+      />
       <div className="text-right pr-10">
-        <button
+        {/* <button
           className="font-bold theme-text-color"
           onClick={() => setIsNavOpen(true)}
         >
           <SlMenu className="w-6 h-6" />
-        </button>
+        </button> */}
         {isNavOpen && (
           <>
             <div className="fixed inset-0 bg-black opacity-50 z-40"></div>

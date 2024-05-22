@@ -41,20 +41,24 @@ export default function Contacts() {
         minHeight: "100vh",
         width: "100%",
         maxWidth: "100%",
-        paddingBottom: "3rem",
       }}
     >
       {isNavOpen && (
         <div className="fixed inset-0 bg-black opacity-50 z-2"></div>
       )}
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Header
+        setIsNavOpen={setIsNavOpen}
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+        showMainLink={false}
+      />
       <div className="text-right pr-10">
-        <button
+        {/* <button
           className="font-bold theme-text-color"
           onClick={() => setIsNavOpen(true)}
         >
           <SlMenu className="w-6 h-6" />
-        </button>
+        </button> */}
         {isNavOpen && (
           <>
             <div className="fixed inset-0 bg-black opacity-50 z-40"></div>
@@ -116,7 +120,7 @@ export default function Contacts() {
               rel="noopener noreferrer"
               className="flex items-center hover-opacity"
             >
-              <p className="xs-padding-adress xl-padding-adress">
+              <p className="xs-padding-adress xl-padding-adress pb-5">
                 {translate("contactsAntPlato", language)} <br />
                 Dereboyu Cd. No:4, 34303, <br />
                 Küçükçekmece/İstanbul, Türkiye
