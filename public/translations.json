@@ -28,7 +28,14 @@
     "EN": "© 2024 ADL. All rights reserved.",
     "TR": "© 2024 ADL. Tüm hakları saklıdır."
   },
-
+  "homepage": {
+    "EN": "Homepage",
+    "TR": "Ana Sayfa"
+  },
+  "navigation": {
+    "EN": " Navigation",
+    "TR": " Navigasyon"
+  },
   "homeTitle": {
     "EN": "Who We Are",
     "TR": "Biz Kimiz"

@@ -70,7 +70,7 @@ export const Header = ({
         margin: "0 auto",
         maxHeight: "80px",
         alignItems: "center",
-        marginBottom: "30px",
+        marginBottom: "20px",
       }}
       className="px-5 pt-2 font-bold text-2xl header-bg-color text-left flex justify-between"
     >

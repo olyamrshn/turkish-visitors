@@ -10,6 +10,7 @@ import {
   GivingIcon,
   PresentationIcon,
 } from "../../public/svg/about-group"
+import Navigation from "../../components/Navigation"
 
 export default function About() {
   const { language } = useLanguage()
@@ -40,6 +41,11 @@ export default function About() {
     >
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main className="main-content text-center flex flex-col px-5 py-15">
+        <div style={{ position: "relative", height: "10vh", width: "100%" }}>
+          <div style={{ position: "absolute", top: 0, right: 15, bottom: 10 }}>
+            <Navigation />
+          </div>
+        </div>
         <h1 className="xs-heading-pages theme-text-color font-bold text-3xl">
           {translate("aboutTitle", language)}
         </h1>
