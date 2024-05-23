@@ -23,7 +23,7 @@ const HeaderLink = ({ href, isMainLink }: LogoLinkProps) => {
   return (
     <Link href={href}>
       <div
-        className={`justify-center pt-7 flex flex-row items-center text-left ${
+        className={`justify-center pt-10 flex flex-row items-center text-left ${
           isMainLink
             ? "pb-10 cursor-default"
             : "pb-10 hover:opacity-60 cursor-pointer"

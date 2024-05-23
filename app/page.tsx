@@ -99,6 +99,8 @@ export default function Home() {
         minHeight: "100vh",
         width: "100%",
         maxWidth: "100%",
+        position: "relative",
+        height: "100%",
       }}
     >
       <Header
